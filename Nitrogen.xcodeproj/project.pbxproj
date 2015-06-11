@@ -240,6 +240,8 @@
 		4CA7846917B31BA500097BC4 /* Default-Landscape~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~iPad.png"; path = "Resources/required/Default-Landscape~iPad.png"; sourceTree = "<group>"; };
 		4CA7846B17B31BB300097BC4 /* Default-Portrait@2x~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~iPad.png"; path = "Resources/required/Default-Portrait@2x~iPad.png"; sourceTree = "<group>"; };
 		4CA7846D17B31BB600097BC4 /* Default-Portrait~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~iPad.png"; path = "Resources/required/Default-Portrait~iPad.png"; sourceTree = "<group>"; };
+		6CE58F2D1B29752A00248407 /* NDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE58F301B29752B00248407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B28304E178DD27000E92785 /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "19-gear.png"; path = "Resources/19-gear.png"; sourceTree = "<group>"; };
 		8B28304F178DD27000E92785 /* 19-gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "19-gear@2x.png"; path = "Resources/19-gear@2x.png"; sourceTree = "<group>"; };
 		8B283052178DD3CA00E92785 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "112-group.png"; path = "Resources/112-group.png"; sourceTree = "<group>"; };
@@ -586,6 +588,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6CE58F2A1B29752A00248407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFCFE0EC1764FBD3000A70CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -619,6 +628,22 @@
 				2838715E17950B69009B8E84 /* math_sqrtf.c */,
 			);
 			name = "math-neon";
+			sourceTree = "<group>";
+		};
+		6CE58F2E1B29752A00248407 /* NDS */ = {
+			isa = PBXGroup;
+			children = (
+				6CE58F2F1B29752B00248407 /* Supporting Files */,
+			);
+			path = NDS;
+			sourceTree = "<group>";
+		};
+		6CE58F2F1B29752B00248407 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CE58F301B29752B00248407 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8B305F65178B48E000FD010A /* Side Drawer */ = {
@@ -876,6 +901,7 @@
 			children = (
 				BFCFE0F81764FBD3000A70CF /* Main */,
 				BF9D515517865E1300B5864B /* Resources */,
+				6CE58F2E1B29752A00248407 /* NDS */,
 				BFCFE0F11764FBD3000A70CF /* Frameworks */,
 				BFCFE0F01764FBD3000A70CF /* Products */,
 			);
@@ -885,6 +911,7 @@
 			isa = PBXGroup;
 			children = (
 				BFCFE0EF1764FBD3000A70CF /* Nitrogen.app */,
+				6CE58F2D1B29752A00248407 /* NDS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1264,7 +1291,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6CE58F341B2975BD00248407 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		6CE58F2C1B29752A00248407 /* NDS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CE58F331B29752B00248407 /* Build configuration list for PBXNativeTarget "NDS" */;
+			buildPhases = (
+				6CE58F291B29752A00248407 /* Sources */,
+				6CE58F2A1B29752A00248407 /* Frameworks */,
+				6CE58F2B1B29752A00248407 /* Resources */,
+				6CE58F341B2975BD00248407 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDS;
+			productName = NDS;
+			productReference = 6CE58F2D1B29752A00248407 /* NDS.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BFCFE0EE1764FBD3000A70CF /* Nitrogen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFCFE1151764FBD3000A70CF /* Build configuration list for PBXNativeTarget "Nitrogen" */;
@@ -1293,6 +1348,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Nitrogen;
 				TargetAttributes = {
+					6CE58F2C1B29752A00248407 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					BFCFE0EE1764FBD3000A70CF = {
 						DevelopmentTeam = LV23VVAR7A;
 					};
@@ -1319,11 +1377,19 @@
 			projectRoot = "";
 			targets = (
 				BFCFE0EE1764FBD3000A70CF /* Nitrogen */,
+				6CE58F2C1B29752A00248407 /* NDS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6CE58F2B1B29752A00248407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFCFE0ED1764FBD3000A70CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1412,6 +1478,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6CE58F291B29752A00248407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFCFE0EB1764FBD3000A70CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1573,6 +1646,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6CE58F311B29752B00248407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = NDS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		6CE58F321B29752B00248407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = NDS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		BFCFE1131764FBD3000A70CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1771,6 +1906,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6CE58F331B29752B00248407 /* Build configuration list for PBXNativeTarget "NDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE58F311B29752B00248407 /* Debug */,
+				6CE58F321B29752B00248407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BFCFE0EA1764FBD3000A70CF /* Build configuration list for PBXProject "Nitrogen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
