@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)OpenNDS:(UIButton *)sender;
 
 @end
 

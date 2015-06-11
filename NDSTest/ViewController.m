@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -24,4 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)OpenNDS:(UIButton *)sender {
+    
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:bundle];
+    UIViewController *vc = [sb instantiateInitialViewController];
+    
+        [self showViewController:vc sender:self];
+}
 @end
