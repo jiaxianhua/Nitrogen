@@ -176,7 +176,8 @@ const float textureVert[] =
     
     EMU_setFrameSkip([defaults integerForKey:@"frameSkip"]);
     EMU_enableSound(![defaults boolForKey:@"disableSound"]);
-    EMU_setSynchMode([defaults boolForKey:@"synchSound"]);
+//        EMU_setSynchMode([defaults boolForKey:@"synchSound"]);
+    EMU_setSynchMode(YES);
     
     self.directionalControl.style = [defaults integerForKey:@"controlPadStyle"];
     

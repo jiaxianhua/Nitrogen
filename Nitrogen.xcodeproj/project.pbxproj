@@ -35,7 +35,6 @@
 		8B283059178DD59700E92785 /* 24-gift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283057178DD59700E92785 /* 24-gift@2x.png */; };
 		8B283060178DDBFB00E92785 /* 282-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28305E178DDBFB00E92785 /* 282-cards.png */; };
 		8B283061178DDBFB00E92785 /* 282-cards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28305F178DDBFB00E92785 /* 282-cards@2x.png */; };
-		8B28306B178DDC7F00E92785 /* NitrogenDonationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B28306A178DDC7F00E92785 /* NitrogenDonationViewController.m */; };
 		8B305F78178B48FD00FD010A /* SASlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F67178B48FD00FD010A /* SASlideMenuContentSegue.m */; };
 		8B305F79178B48FD00FD010A /* SASlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F6B178B48FD00FD010A /* SASlideMenuLeftMenuSegue.m */; };
 		8B305F7A178B48FD00FD010A /* SASlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F6D178B48FD00FD010A /* SASlideMenuNavigationController.m */; };
@@ -48,7 +47,6 @@
 		8B305F91178B914E00FD010A /* drawerlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B305F8F178B914D00FD010A /* drawerlogo@2x.png */; };
 		8B305F94178B95EA00FD010A /* 210-twitterbird.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B305F92178B95E900FD010A /* 210-twitterbird.png */; };
 		8B305F95178B95EA00FD010A /* 210-twitterbird@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B305F93178B95EA00FD010A /* 210-twitterbird@2x.png */; };
-		8B305F99178B998800FD010A /* NitrogenAboutViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F98178B998800FD010A /* NitrogenAboutViewController.mm */; };
 		8B4895C0178CCBEE00BA61C3 /* OLGhostAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4895BF178CCBEE00BA61C3 /* OLGhostAlertView.m */; };
 		8B4895C5178CE15D00BA61C3 /* NitrogenROMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4895C4178CE15D00BA61C3 /* NitrogenROMTableViewController.m */; };
 		8B489B42178DAD6C00BA61C3 /* SASlideMenuRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B489B41178DAD6A00BA61C3 /* SASlideMenuRightMenuViewController.m */; };
@@ -250,8 +248,6 @@
 		8B283057178DD59700E92785 /* 24-gift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "24-gift@2x.png"; path = "Resources/24-gift@2x.png"; sourceTree = "<group>"; };
 		8B28305E178DDBFB00E92785 /* 282-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "282-cards.png"; path = "Resources/282-cards.png"; sourceTree = "<group>"; };
 		8B28305F178DDBFB00E92785 /* 282-cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "282-cards@2x.png"; path = "Resources/282-cards@2x.png"; sourceTree = "<group>"; };
-		8B283069178DDC7F00E92785 /* NitrogenDonationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NitrogenDonationViewController.h; path = Nitrogen/donation/NitrogenDonationViewController.h; sourceTree = SOURCE_ROOT; };
-		8B28306A178DDC7F00E92785 /* NitrogenDonationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NitrogenDonationViewController.m; path = Nitrogen/donation/NitrogenDonationViewController.m; sourceTree = SOURCE_ROOT; };
 		8B305F66178B48FD00FD010A /* SASlideMenuContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SASlideMenuContentSegue.h; path = Nitrogen/sidedrawer/SASlideMenuContentSegue.h; sourceTree = SOURCE_ROOT; };
 		8B305F67178B48FD00FD010A /* SASlideMenuContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SASlideMenuContentSegue.m; path = Nitrogen/sidedrawer/SASlideMenuContentSegue.m; sourceTree = SOURCE_ROOT; };
 		8B305F68178B48FD00FD010A /* SASlideMenuDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SASlideMenuDataSource.h; path = Nitrogen/sidedrawer/SASlideMenuDataSource.h; sourceTree = SOURCE_ROOT; };
@@ -274,8 +270,6 @@
 		8B305F8F178B914D00FD010A /* drawerlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drawerlogo@2x.png"; path = "Resources/drawerlogo@2x.png"; sourceTree = "<group>"; };
 		8B305F92178B95E900FD010A /* 210-twitterbird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "210-twitterbird.png"; path = "Resources/210-twitterbird.png"; sourceTree = "<group>"; };
 		8B305F93178B95EA00FD010A /* 210-twitterbird@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "210-twitterbird@2x.png"; path = "Resources/210-twitterbird@2x.png"; sourceTree = "<group>"; };
-		8B305F97178B998800FD010A /* NitrogenAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NitrogenAboutViewController.h; path = Nitrogen/about/NitrogenAboutViewController.h; sourceTree = SOURCE_ROOT; };
-		8B305F98178B998800FD010A /* NitrogenAboutViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NitrogenAboutViewController.mm; path = Nitrogen/about/NitrogenAboutViewController.mm; sourceTree = SOURCE_ROOT; };
 		8B4895BE178CCBEE00BA61C3 /* OLGhostAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLGhostAlertView.h; path = Nitrogen/resumealert/OLGhostAlertView.h; sourceTree = SOURCE_ROOT; };
 		8B4895BF178CCBEE00BA61C3 /* OLGhostAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLGhostAlertView.m; path = Nitrogen/resumealert/OLGhostAlertView.m; sourceTree = SOURCE_ROOT; };
 		8B4895C4178CE15D00BA61C3 /* NitrogenROMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NitrogenROMTableViewController.m; path = Nitrogen/roms/NitrogenROMTableViewController.m; sourceTree = SOURCE_ROOT; };
@@ -627,15 +621,6 @@
 			name = "math-neon";
 			sourceTree = "<group>";
 		};
-		8B283062178DDC4B00E92785 /* Donation */ = {
-			isa = PBXGroup;
-			children = (
-				8B283069178DDC7F00E92785 /* NitrogenDonationViewController.h */,
-				8B28306A178DDC7F00E92785 /* NitrogenDonationViewController.m */,
-			);
-			name = Donation;
-			sourceTree = "<group>";
-		};
 		8B305F65178B48E000FD010A /* Side Drawer */ = {
 			isa = PBXGroup;
 			children = (
@@ -663,15 +648,6 @@
 				8B305F77178B48FD00FD010A /* SASlideMenuViewController.m */,
 			);
 			name = "Side Drawer";
-			sourceTree = "<group>";
-		};
-		8B305F96178B996200FD010A /* About */ = {
-			isa = PBXGroup;
-			children = (
-				8B305F97178B998800FD010A /* NitrogenAboutViewController.h */,
-				8B305F98178B998800FD010A /* NitrogenAboutViewController.mm */,
-			);
-			name = About;
 			sourceTree = "<group>";
 		};
 		8B4895AC178CC67900BA61C3 /* OLGhostAlertView */ = {
@@ -940,9 +916,7 @@
 			children = (
 				9C8DDCCD19FDD8D500D03AB2 /* App Init */,
 				BFCFE12F17650ED0000A70CF /* DeSmuME */,
-				8B305F96178B996200FD010A /* About */,
 				BF9D51751786A60E00B5864B /* Settings */,
-				8B283062178DDC4B00E92785 /* Donation */,
 				BFAE6FAB17675623000911CF /* Controls */,
 				BFAE6F8F176748CF000911CF /* Emulator View */,
 				BFCFE12E17650D3F000A70CF /* DocWatchHelper */,
@@ -1316,8 +1290,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Nitrogen;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Nitrogen;
+				TargetAttributes = {
+					BFCFE0EE1764FBD3000A70CF = {
+						DevelopmentTeam = LV23VVAR7A;
+					};
+				};
 			};
 			buildConfigurationList = BFCFE0EA1764FBD3000A70CF /* Build configuration list for PBXProject "Nitrogen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1554,11 +1533,9 @@
 				8B305F7E178B48FD00FD010A /* SASlideMenuRootViewController.m in Sources */,
 				8B305F7F178B48FD00FD010A /* SASlideMenuViewController.m in Sources */,
 				8B305F85178B4A1800FD010A /* MenuCell.m in Sources */,
-				8B305F99178B998800FD010A /* NitrogenAboutViewController.mm in Sources */,
 				8B4895C0178CCBEE00BA61C3 /* OLGhostAlertView.m in Sources */,
 				8B4895C5178CE15D00BA61C3 /* NitrogenROMTableViewController.m in Sources */,
 				8B489B42178DAD6C00BA61C3 /* SASlideMenuRightMenuViewController.m in Sources */,
-				8B28306B178DDC7F00E92785 /* NitrogenDonationViewController.m in Sources */,
 				D31CC8A417927BCB0098FB9C /* CHBgDropboxSync.m in Sources */,
 				D31CC8A517927BCB0098FB9C /* DropboxClearer.m in Sources */,
 				D31CC8B217927C3B0098FB9C /* ConciseKit.m in Sources */,
@@ -1600,6 +1577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1610,12 +1588,13 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianhua Jia (66TCW2N4N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1652,6 +1631,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -1659,6 +1639,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1669,11 +1650,12 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianhua Jia (66TCW2N4N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1689,6 +1671,7 @@
 					"$(SRCROOT)/desmume/src/android",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DANDROID",
@@ -1704,6 +1687,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -1713,8 +1697,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianhua Jia (66TCW2N4N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1734,6 +1718,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Nitrogen/support/Nitrogen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-DANDROID",
+					"-DCOMPRESS_MT",
+					"-DIOS",
+					"-DHAVE_LIBZ",
+					"-marm",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Nitrogen;
 				PROVISIONING_PROFILE = "";
@@ -1748,8 +1739,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianhua Jia (66TCW2N4N7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
