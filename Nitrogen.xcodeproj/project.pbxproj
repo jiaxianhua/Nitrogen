@@ -22,7 +22,6 @@
 		28E7A6EE1787D110003A9C5B /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6ED1787D110003A9C5B /* Defaults.plist */; };
 		28E7A6F51787D8D5003A9C5B /* HideEmulator.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6F31787D8D5003A9C5B /* HideEmulator.png */; };
 		28E7A6F61787D8D5003A9C5B /* HideEmulator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6F41787D8D5003A9C5B /* HideEmulator@2x.png */; };
-		4C3F2AED178E017600AE10B8 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3F2AEC178E017600AE10B8 /* Twitter.framework */; };
 		4CA7846817B31BA000097BC4 /* Default-Landscape@2x~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7846717B31BA000097BC4 /* Default-Landscape@2x~iPad.png */; };
 		4CA7846A17B31BA500097BC4 /* Default-Landscape~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7846917B31BA500097BC4 /* Default-Landscape~iPad.png */; };
 		4CA7846C17B31BB300097BC4 /* Default-Portrait@2x~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7846B17B31BB300097BC4 /* Default-Portrait@2x~iPad.png */; };
@@ -237,12 +236,6 @@
 		BFCFE247176634EE000A70CF /* slot2_rumblepak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE23B176634EE000A70CF /* slot2_rumblepak.cpp */; };
 		BFCFE26B1766379F000A70CF /* addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13017650FB0000A70CF /* addons.cpp */; };
 		C345B67218906BB40065A795 /* NitrogenMFIControllerSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = C345B67118906BB40065A795 /* NitrogenMFIControllerSupport.mm */; };
-		D31CC8A417927BCB0098FB9C /* CHBgDropboxSync.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CC8A117927BCB0098FB9C /* CHBgDropboxSync.m */; };
-		D31CC8A517927BCB0098FB9C /* DropboxClearer.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CC8A317927BCB0098FB9C /* DropboxClearer.m */; };
-		D31CC8B217927C3B0098FB9C /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CC8AB17927C3B0098FB9C /* ConciseKit.m */; };
-		D31CC8B317927C3B0098FB9C /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CC8AD17927C3B0098FB9C /* NSArray+ConciseKit.m */; };
-		D31CC8B417927C3B0098FB9C /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CC8AF17927C3B0098FB9C /* NSDictionary+ConciseKit.m */; };
-		D31CC8B517927C3B0098FB9C /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CC8B117927C3B0098FB9C /* NSString+ConciseKit.m */; };
 		D325821217A1D69B0009C84B /* pixelgrid.png in Resources */ = {isa = PBXBuildFile; fileRef = D325821017A1D69B0009C84B /* pixelgrid.png */; };
 		D325821317A1D69B0009C84B /* pixelgrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D325821117A1D69B0009C84B /* pixelgrid@2x.png */; };
 		D32C39D3178E73A600E6809E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39D2178E73A600E6809E /* CFNetwork.framework */; };
@@ -254,7 +247,6 @@
 		D370362017B1C339001C1E15 /* iOS 6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D370361C17B1C339001C1E15 /* iOS 6@2x.png */; };
 		D370362117B1C339001C1E15 /* iOS 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D370361D17B1C339001C1E15 /* iOS 7.png */; };
 		D370362217B1C339001C1E15 /* iOS 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D370361E17B1C339001C1E15 /* iOS 7@2x.png */; };
-		D3B8BB921794ACCE0061D1D8 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B8BB911794ACCE0061D1D8 /* DropboxSDK.framework */; };
 		D3B8BB961794ACEF0061D1D8 /* ZAActivityBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3B8BB931794ACEF0061D1D8 /* ZAActivityBar.bundle */; };
 		D3B8BB971794ACEF0061D1D8 /* ZAActivityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8BB951794ACEF0061D1D8 /* ZAActivityBar.m */; };
 		D3B8BB9A1794ACFE0061D1D8 /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8BB991794ACFE0061D1D8 /* SKBounceAnimation.m */; };
@@ -596,21 +588,6 @@
 		BFCFE23B176634EE000A70CF /* slot2_rumblepak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = slot2_rumblepak.cpp; path = desmume/src/addons/slot2_rumblepak.cpp; sourceTree = SOURCE_ROOT; };
 		C345B67018906BB40065A795 /* NitrogenMFIControllerSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NitrogenMFIControllerSupport.h; path = Nitrogen/controls/NitrogenMFIControllerSupport.h; sourceTree = SOURCE_ROOT; };
 		C345B67118906BB40065A795 /* NitrogenMFIControllerSupport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NitrogenMFIControllerSupport.mm; path = Nitrogen/controls/NitrogenMFIControllerSupport.mm; sourceTree = SOURCE_ROOT; };
-		D31CC8A017927BCB0098FB9C /* CHBgDropboxSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHBgDropboxSync.h; sourceTree = "<group>"; };
-		D31CC8A117927BCB0098FB9C /* CHBgDropboxSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHBgDropboxSync.m; sourceTree = "<group>"; };
-		D31CC8A217927BCB0098FB9C /* DropboxClearer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxClearer.h; sourceTree = "<group>"; };
-		D31CC8A317927BCB0098FB9C /* DropboxClearer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxClearer.m; sourceTree = "<group>"; };
-		D31CC8A717927C3B0098FB9C /* CKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAdditions.h; sourceTree = "<group>"; };
-		D31CC8A817927C3B0098FB9C /* CKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMacros.h; sourceTree = "<group>"; };
-		D31CC8A917927C3B0098FB9C /* CKSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSingleton.h; sourceTree = "<group>"; };
-		D31CC8AA17927C3B0098FB9C /* ConciseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConciseKit.h; sourceTree = "<group>"; };
-		D31CC8AB17927C3B0098FB9C /* ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConciseKit.m; sourceTree = "<group>"; };
-		D31CC8AC17927C3B0098FB9C /* NSArray+ConciseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ConciseKit.h"; sourceTree = "<group>"; };
-		D31CC8AD17927C3B0098FB9C /* NSArray+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ConciseKit.m"; sourceTree = "<group>"; };
-		D31CC8AE17927C3B0098FB9C /* NSDictionary+ConciseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ConciseKit.h"; sourceTree = "<group>"; };
-		D31CC8AF17927C3B0098FB9C /* NSDictionary+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ConciseKit.m"; sourceTree = "<group>"; };
-		D31CC8B017927C3B0098FB9C /* NSString+ConciseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ConciseKit.h"; sourceTree = "<group>"; };
-		D31CC8B117927C3B0098FB9C /* NSString+ConciseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ConciseKit.m"; sourceTree = "<group>"; };
 		D325821017A1D69B0009C84B /* pixelgrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pixelgrid.png; path = Resources/pixelgrid.png; sourceTree = "<group>"; };
 		D325821117A1D69B0009C84B /* pixelgrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pixelgrid@2x.png"; path = "Resources/pixelgrid@2x.png"; sourceTree = "<group>"; };
 		D32C39D2178E73A600E6809E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -657,14 +634,12 @@
 				D32C39D7178E73C200E6809E /* SystemConfiguration.framework in Frameworks */,
 				D32C39D5178E73B500E6809E /* Security.framework in Frameworks */,
 				D32C39D3178E73A600E6809E /* CFNetwork.framework in Frameworks */,
-				4C3F2AED178E017600AE10B8 /* Twitter.framework in Frameworks */,
 				BFAE6F9B17674D93000911CF /* libz.dylib in Frameworks */,
 				BFAE6F931767490A000911CF /* OpenGLES.framework in Frameworks */,
 				BFAE6F9117674902000911CF /* GLKit.framework in Frameworks */,
 				BFCFE0F31764FBD3000A70CF /* UIKit.framework in Frameworks */,
 				BFCFE0F51764FBD3000A70CF /* Foundation.framework in Frameworks */,
 				BFCFE0F71764FBD3000A70CF /* CoreGraphics.framework in Frameworks */,
-				D3B8BB921794ACCE0061D1D8 /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,7 +996,6 @@
 				8BEA099217876A490060B347 /* Open Zip Files */,
 				8B305F65178B48E000FD010A /* Side Drawer */,
 				8B4895AC178CC67900BA61C3 /* OLGhostAlertView */,
-				D31CC89F17927BCB0098FB9C /* Dropbox */,
 				D31CC8B617927E840098FB9C /* ZAActivityBar */,
 				BFCFE0F91764FBD3000A70CF /* Supporting Files */,
 			);
@@ -1304,37 +1278,6 @@
 			);
 			name = JIT;
 			path = ../desmume/src/JIT;
-			sourceTree = "<group>";
-		};
-		D31CC89F17927BCB0098FB9C /* Dropbox */ = {
-			isa = PBXGroup;
-			children = (
-				D31CC8A017927BCB0098FB9C /* CHBgDropboxSync.h */,
-				D31CC8A117927BCB0098FB9C /* CHBgDropboxSync.m */,
-				D31CC8A217927BCB0098FB9C /* DropboxClearer.h */,
-				D31CC8A317927BCB0098FB9C /* DropboxClearer.m */,
-				D31CC8A617927C3B0098FB9C /* ConciseKit */,
-			);
-			name = Dropbox;
-			path = "CHBgDropboxSync-master";
-			sourceTree = "<group>";
-		};
-		D31CC8A617927C3B0098FB9C /* ConciseKit */ = {
-			isa = PBXGroup;
-			children = (
-				D31CC8A717927C3B0098FB9C /* CKAdditions.h */,
-				D31CC8A817927C3B0098FB9C /* CKMacros.h */,
-				D31CC8A917927C3B0098FB9C /* CKSingleton.h */,
-				D31CC8AA17927C3B0098FB9C /* ConciseKit.h */,
-				D31CC8AB17927C3B0098FB9C /* ConciseKit.m */,
-				D31CC8AC17927C3B0098FB9C /* NSArray+ConciseKit.h */,
-				D31CC8AD17927C3B0098FB9C /* NSArray+ConciseKit.m */,
-				D31CC8AE17927C3B0098FB9C /* NSDictionary+ConciseKit.h */,
-				D31CC8AF17927C3B0098FB9C /* NSDictionary+ConciseKit.m */,
-				D31CC8B017927C3B0098FB9C /* NSString+ConciseKit.h */,
-				D31CC8B117927C3B0098FB9C /* NSString+ConciseKit.m */,
-			);
-			path = ConciseKit;
 			sourceTree = "<group>";
 		};
 		D31CC8B617927E840098FB9C /* ZAActivityBar */ = {
@@ -1755,12 +1698,6 @@
 				8B4895C0178CCBEE00BA61C3 /* OLGhostAlertView.m in Sources */,
 				8B4895C5178CE15D00BA61C3 /* NitrogenROMTableViewController.m in Sources */,
 				8B489B42178DAD6C00BA61C3 /* SASlideMenuRightMenuViewController.m in Sources */,
-				D31CC8A417927BCB0098FB9C /* CHBgDropboxSync.m in Sources */,
-				D31CC8A517927BCB0098FB9C /* DropboxClearer.m in Sources */,
-				D31CC8B217927C3B0098FB9C /* ConciseKit.m in Sources */,
-				D31CC8B317927C3B0098FB9C /* NSArray+ConciseKit.m in Sources */,
-				D31CC8B417927C3B0098FB9C /* NSDictionary+ConciseKit.m in Sources */,
-				D31CC8B517927C3B0098FB9C /* NSString+ConciseKit.m in Sources */,
 				D3B8BB971794ACEF0061D1D8 /* ZAActivityBar.m in Sources */,
 				D3B8BB9A1794ACFE0061D1D8 /* SKBounceAnimation.m in Sources */,
 				8B7F89CB1794F35C00F3EA58 /* NitrogenRightMenuViewController.m in Sources */,

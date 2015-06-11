@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "NitrogenROMTableViewController.h"
 #import "NitrogenEmulatorViewController.h"
-#import <DropboxSDK/DropboxSDK.h>
-#import "CHBgDropboxSync.h"
 #import "SASlideMenuRootViewController.h"
 #import "NitrogenRightMenuViewController.h"
 
@@ -66,7 +64,6 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [CHBgDropboxSync start];
     [super viewWillAppear:animated];
 }
 

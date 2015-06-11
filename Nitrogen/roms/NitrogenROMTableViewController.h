@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DropboxSDK/DropboxSDK.h>
 #import "DocWatchHelper.h"
 
 @interface NitrogenROMTableViewController : UITableViewController <UIAlertViewDelegate>

@@ -7,9 +7,7 @@
 //
 
 #import "NitrogenSettingsViewController.h"
-#import <DropboxSDK/DropboxSDK.h>
 #import "OLGhostAlertView.h"
-#import "CHBgDropboxSync.h"
 
 @interface NitrogenSettingsViewController ()
 
@@ -185,20 +183,7 @@
         [defaults setBool:self.enableJITSwitch.on forKey:@"enableLightningJIT"];
     } else if (sender == self.vibrateSwitch) {
         [defaults setBool:self.vibrateSwitch.on forKey:@"vibrate"];
-    } else if (sender == self.dropboxSwitch) {//i'll use a better more foolproof method later. <- lol yeah right
-        if ([defaults boolForKey:@"enableDropbox"] == false) {
-            [[DBSession sharedSession] linkFromController:self];
-        } else {
-            NSLog(@"unlink");
-            [CHBgDropboxSync forceStopIfRunning];
-            [CHBgDropboxSync clearLastSyncData];
-            [[DBSession sharedSession] unlinkAll];
-            OLGhostAlertView *unlinkAlert = [[OLGhostAlertView alloc] initWithTitle:NSLocalizedString(@"UNLINKED", nil) message:NSLocalizedString(@"UNLINKED_DETAIL", nil) timeout:10 dismissible:YES];
-            [unlinkAlert show];
-            
-            [defaults setBool:false forKey:@"enableDropbox"];
-            self.accountLabel.text = NSLocalizedString(@"NOT_LINKED", nil);
-        }
+    } else if (sender == self.dropboxSwitch) {
     } else if (sender == self.cellularSwitch) {
         [defaults setBool:self.cellularSwitch.on forKey:@"enableDropboxCellular"];
     }
