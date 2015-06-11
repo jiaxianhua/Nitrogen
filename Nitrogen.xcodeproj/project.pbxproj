@@ -46,6 +46,100 @@
 		6CB9A0D81B2999C600F39AFF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39DA178E749C00E6809E /* libc++.dylib */; };
 		6CB9A0D91B2999CC00F39AFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D514717865D5100B5864B /* AudioToolbox.framework */; };
 		6CB9A0DA1B2999D500F39AFF /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DD2851891E5390075B66C /* GameController.framework */; };
+		6CB9A15D1B29A37800F39AFF /* emu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098117872CF40060B347 /* emu.cpp */; };
+		6CB9A15E1B29A37800F39AFF /* throttle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098817872CF40060B347 /* throttle.cpp */; };
+		6CB9A15F1B29A37800F39AFF /* addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13017650FB0000A70CF /* addons.cpp */; };
+		6CB9A1601B29A37800F39AFF /* arm_instructions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13217650FB0000A70CF /* arm_instructions.cpp */; };
+		6CB9A1611B29A37800F39AFF /* ArmAnalyze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13417650FB0000A70CF /* ArmAnalyze.cpp */; };
+		6CB9A1631B29A37800F39AFF /* armcpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13817650FB0000A70CF /* armcpu.cpp */; };
+		6CB9A1641B29A37800F39AFF /* ArmThreadedInterpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13A17650FB0000A70CF /* ArmThreadedInterpreter.cpp */; };
+		6CB9A1651B29A37800F39AFF /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13C17650FB0000A70CF /* bios.cpp */; };
+		6CB9A1661B29A37800F39AFF /* cheatSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13E17650FB0000A70CF /* cheatSystem.cpp */; };
+		6CB9A1671B29A37800F39AFF /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14017650FB0000A70CF /* common.cpp */; };
+		6CB9A1681B29A37800F39AFF /* cp15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14217650FB0000A70CF /* cp15.cpp */; };
+		6CB9A1691B29A37800F39AFF /* CpuBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14417650FB0000A70CF /* CpuBase.cpp */; };
+		6CB9A16A1B29A37800F39AFF /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14617650FB0000A70CF /* debug.cpp */; };
+		6CB9A16B1B29A37800F39AFF /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14817650FB0000A70CF /* Disassembler.cpp */; };
+		6CB9A16C1B29A37800F39AFF /* driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14A17650FB0000A70CF /* driver.cpp */; };
+		6CB9A16D1B29A37800F39AFF /* emufile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14C17650FB0000A70CF /* emufile.cpp */; };
+		6CB9A16E1B29A37800F39AFF /* FIFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14E17650FB0000A70CF /* FIFO.cpp */; };
+		6CB9A16F1B29A37800F39AFF /* firmware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15017650FB0000A70CF /* firmware.cpp */; };
+		6CB9A1701B29A37800F39AFF /* fs-linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15217650FB0000A70CF /* fs-linux.cpp */; };
+		6CB9A1711B29A37800F39AFF /* gfx3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15417650FB0000A70CF /* gfx3d.cpp */; };
+		6CB9A1721B29A37800F39AFF /* GPU_osd_stub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15617650FB0000A70CF /* GPU_osd_stub.cpp */; };
+		6CB9A1731B29A37800F39AFF /* GPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15817650FB0000A70CF /* GPU.cpp */; };
+		6CB9A1741B29A37800F39AFF /* JitCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15A17650FB0000A70CF /* JitCommon.cpp */; };
+		6CB9A1751B29A37800F39AFF /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15C17650FB0000A70CF /* matrix.cpp */; };
+		6CB9A1761B29A37800F39AFF /* mc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15E17650FB0000A70CF /* mc.cpp */; };
+		6CB9A1771B29A37800F39AFF /* MMU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15F17650FB0000A70CF /* MMU.cpp */; };
+		6CB9A1781B29A37800F39AFF /* movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16117650FB0000A70CF /* movie.cpp */; };
+		6CB9A1791B29A37800F39AFF /* NDSSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16317650FB0000A70CF /* NDSSystem.cpp */; };
+		6CB9A17A1B29A37800F39AFF /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16517650FB0000A70CF /* path.cpp */; };
+		6CB9A17B1B29A37800F39AFF /* rasterize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16717650FB0000A70CF /* rasterize.cpp */; };
+		6CB9A17C1B29A37800F39AFF /* readwrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16917650FB0000A70CF /* readwrite.cpp */; };
+		6CB9A17D1B29A37800F39AFF /* render3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16B17650FB0000A70CF /* render3D.cpp */; };
+		6CB9A17E1B29A37800F39AFF /* ROMReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16D17650FB0000A70CF /* ROMReader.cpp */; };
+		6CB9A17F1B29A37800F39AFF /* rtc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16F17650FB0000A70CF /* rtc.cpp */; };
+		6CB9A1801B29A37800F39AFF /* saves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17117650FB0000A70CF /* saves.cpp */; };
+		6CB9A1811B29A37800F39AFF /* slot1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17317650FB0000A70CF /* slot1.cpp */; };
+		6CB9A1821B29A37800F39AFF /* SPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17517650FB0000A70CF /* SPU.cpp */; };
+		6CB9A1831B29A37800F39AFF /* texcache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17717650FB0000A70CF /* texcache.cpp */; };
+		6CB9A1841B29A37800F39AFF /* thumb_instructions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17917650FB0000A70CF /* thumb_instructions.cpp */; };
+		6CB9A1851B29A37800F39AFF /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17B17650FB0000A70CF /* version.cpp */; };
+		6CB9A1861B29A37800F39AFF /* wifi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17D17650FB0000A70CF /* wifi.cpp */; };
+		6CB9A1871B29A37800F39AFF /* slot1_none.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE230176634EE000A70CF /* slot1_none.cpp */; };
+		6CB9A1881B29A37800F39AFF /* slot1_r4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE231176634EE000A70CF /* slot1_r4.cpp */; };
+		6CB9A1891B29A37800F39AFF /* slot1_retail_nand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE232176634EE000A70CF /* slot1_retail_nand.cpp */; };
+		6CB9A18A1B29A37800F39AFF /* slot1_retail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE233176634EE000A70CF /* slot1_retail.cpp */; };
+		6CB9A18B1B29A37800F39AFF /* slot2_expMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE234176634EE000A70CF /* slot2_expMemory.cpp */; };
+		6CB9A18C1B29A37900F39AFF /* slot2_gbagame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE235176634EE000A70CF /* slot2_gbagame.cpp */; };
+		6CB9A18D1B29A37900F39AFF /* slot2_guitarGrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE236176634EE000A70CF /* slot2_guitarGrip.cpp */; };
+		6CB9A18E1B29A37900F39AFF /* slot2_mpcf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE237176634EE000A70CF /* slot2_mpcf.cpp */; };
+		6CB9A18F1B29A37900F39AFF /* slot2_none.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE238176634EE000A70CF /* slot2_none.cpp */; };
+		6CB9A1901B29A37900F39AFF /* slot2_paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE239176634EE000A70CF /* slot2_paddle.cpp */; };
+		6CB9A1911B29A37900F39AFF /* slot2_piano.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE23A176634EE000A70CF /* slot2_piano.cpp */; };
+		6CB9A1921B29A37900F39AFF /* slot2_rumblepak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE23B176634EE000A70CF /* slot2_rumblepak.cpp */; };
+		6CB9A1931B29A37900F39AFF /* 2xsai.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1A817651005000A70CF /* 2xsai.cpp */; };
+		6CB9A1941B29A37900F39AFF /* bilinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1A917651005000A70CF /* bilinear.cpp */; };
+		6CB9A1951B29A37900F39AFF /* epx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AA17651005000A70CF /* epx.cpp */; };
+		6CB9A1961B29A37900F39AFF /* hq2x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AC17651005000A70CF /* hq2x.cpp */; };
+		6CB9A1971B29A37900F39AFF /* hq4x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AE17651005000A70CF /* hq4x.cpp */; };
+		6CB9A1981B29A37900F39AFF /* lq2x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1B117651005000A70CF /* lq2x.cpp */; };
+		6CB9A1991B29A37900F39AFF /* scanline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1B317651005000A70CF /* scanline.cpp */; };
+		6CB9A19A1B29A37900F39AFF /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C017651076000A70CF /* ConvertUTF.c */; };
+		6CB9A19B1B29A37900F39AFF /* datetime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C217651076000A70CF /* datetime.cpp */; };
+		6CB9A19C1B29A37900F39AFF /* dlditool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C417651076000A70CF /* dlditool.cpp */; };
+		6CB9A19D1B29A37900F39AFF /* emufat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C517651076000A70CF /* emufat.cpp */; };
+		6CB9A19E1B29A37900F39AFF /* FileMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C717651076000A70CF /* FileMap.cpp */; };
+		6CB9A19F1B29A37900F39AFF /* guid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C917651076000A70CF /* guid.cpp */; };
+		6CB9A1A01B29A37900F39AFF /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CB17651076000A70CF /* md5.cpp */; };
+		6CB9A1A11B29A37900F39AFF /* MemBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CD17651076000A70CF /* MemBuffer.cpp */; };
+		6CB9A1A21B29A37900F39AFF /* task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CF17651076000A70CF /* task.cpp */; };
+		6CB9A1A31B29A37900F39AFF /* vfat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D117651076000A70CF /* vfat.cpp */; };
+		6CB9A1A41B29A37900F39AFF /* xstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D317651076000A70CF /* xstring.cpp */; };
+		6CB9A1A51B29A37900F39AFF /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE225176634C6000A70CF /* tinystr.cpp */; };
+		6CB9A1A61B29A37900F39AFF /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE227176634C6000A70CF /* tinyxml.cpp */; };
+		6CB9A1A71B29A37900F39AFF /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE229176634C6000A70CF /* tinyxmlerror.cpp */; };
+		6CB9A1A81B29A37900F39AFF /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE22A176634C6000A70CF /* tinyxmlparser.cpp */; };
+		6CB9A1A91B29A37900F39AFF /* crc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E11765109C000A70CF /* crc.cpp */; };
+		6CB9A1AA1B29A37900F39AFF /* decrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E31765109C000A70CF /* decrypt.cpp */; };
+		6CB9A1AB1B29A37900F39AFF /* header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E51765109C000A70CF /* header.cpp */; };
+		6CB9A1AC1B29A38500F39AFF /* ArmLJit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC475177FF06600D3CF93 /* ArmLJit.cpp */; };
+		6CB9A1AD1B29A38600F39AFF /* metaspu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1BC17651037000A70CF /* metaspu.cpp */; };
+		6CB9A1AE1B29A38600F39AFF /* SndOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF9D514117865CD800B5864B /* SndOut.cpp */; };
+		6CB9A1AF1B29A38600F39AFF /* cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE205176634AF000A70CF /* cache.cpp */; };
+		6CB9A1B01B29A38600F39AFF /* directory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE207176634AF000A70CF /* directory.cpp */; };
+		6CB9A1B11B29A38600F39AFF /* disc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE209176634AF000A70CF /* disc.cpp */; };
+		6CB9A1B21B29A38600F39AFF /* fatdir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20B176634AF000A70CF /* fatdir.cpp */; };
+		6CB9A1B31B29A38600F39AFF /* fatfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20D176634AF000A70CF /* fatfile.cpp */; };
+		6CB9A1B41B29A38600F39AFF /* file_allocation_table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20F176634AF000A70CF /* file_allocation_table.cpp */; };
+		6CB9A1B51B29A38600F39AFF /* filetime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE211176634AF000A70CF /* filetime.cpp */; };
+		6CB9A1B61B29A38600F39AFF /* libfat_public_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE213176634AF000A70CF /* libfat_public_api.cpp */; };
+		6CB9A1B71B29A38600F39AFF /* libfat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE215176634AF000A70CF /* libfat.cpp */; };
+		6CB9A1B81B29A38600F39AFF /* lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE216176634AF000A70CF /* lock.cpp */; };
+		6CB9A1B91B29A38600F39AFF /* partition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE218176634AF000A70CF /* partition.cpp */; };
+		6CB9A1BA1B29A38600F39AFF /* math_mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2838715D17950B69009B8E84 /* math_mat4.c */; };
+		6CB9A1BB1B29A38600F39AFF /* math_sqrtf.c in Sources */ = {isa = PBXBuildFile; fileRef = 2838715E17950B69009B8E84 /* math_sqrtf.c */; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -1639,6 +1733,100 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB9A1AC1B29A38500F39AFF /* ArmLJit.cpp in Sources */,
+				6CB9A1AD1B29A38600F39AFF /* metaspu.cpp in Sources */,
+				6CB9A1AE1B29A38600F39AFF /* SndOut.cpp in Sources */,
+				6CB9A1AF1B29A38600F39AFF /* cache.cpp in Sources */,
+				6CB9A1B01B29A38600F39AFF /* directory.cpp in Sources */,
+				6CB9A1B11B29A38600F39AFF /* disc.cpp in Sources */,
+				6CB9A1B21B29A38600F39AFF /* fatdir.cpp in Sources */,
+				6CB9A1B31B29A38600F39AFF /* fatfile.cpp in Sources */,
+				6CB9A1B41B29A38600F39AFF /* file_allocation_table.cpp in Sources */,
+				6CB9A1B51B29A38600F39AFF /* filetime.cpp in Sources */,
+				6CB9A1B61B29A38600F39AFF /* libfat_public_api.cpp in Sources */,
+				6CB9A1B71B29A38600F39AFF /* libfat.cpp in Sources */,
+				6CB9A1B81B29A38600F39AFF /* lock.cpp in Sources */,
+				6CB9A1B91B29A38600F39AFF /* partition.cpp in Sources */,
+				6CB9A1BA1B29A38600F39AFF /* math_mat4.c in Sources */,
+				6CB9A1BB1B29A38600F39AFF /* math_sqrtf.c in Sources */,
+				6CB9A15D1B29A37800F39AFF /* emu.cpp in Sources */,
+				6CB9A15E1B29A37800F39AFF /* throttle.cpp in Sources */,
+				6CB9A15F1B29A37800F39AFF /* addons.cpp in Sources */,
+				6CB9A1601B29A37800F39AFF /* arm_instructions.cpp in Sources */,
+				6CB9A1611B29A37800F39AFF /* ArmAnalyze.cpp in Sources */,
+				6CB9A1631B29A37800F39AFF /* armcpu.cpp in Sources */,
+				6CB9A1641B29A37800F39AFF /* ArmThreadedInterpreter.cpp in Sources */,
+				6CB9A1651B29A37800F39AFF /* bios.cpp in Sources */,
+				6CB9A1661B29A37800F39AFF /* cheatSystem.cpp in Sources */,
+				6CB9A1671B29A37800F39AFF /* common.cpp in Sources */,
+				6CB9A1681B29A37800F39AFF /* cp15.cpp in Sources */,
+				6CB9A1691B29A37800F39AFF /* CpuBase.cpp in Sources */,
+				6CB9A16A1B29A37800F39AFF /* debug.cpp in Sources */,
+				6CB9A16B1B29A37800F39AFF /* Disassembler.cpp in Sources */,
+				6CB9A16C1B29A37800F39AFF /* driver.cpp in Sources */,
+				6CB9A16D1B29A37800F39AFF /* emufile.cpp in Sources */,
+				6CB9A16E1B29A37800F39AFF /* FIFO.cpp in Sources */,
+				6CB9A16F1B29A37800F39AFF /* firmware.cpp in Sources */,
+				6CB9A1701B29A37800F39AFF /* fs-linux.cpp in Sources */,
+				6CB9A1711B29A37800F39AFF /* gfx3d.cpp in Sources */,
+				6CB9A1721B29A37800F39AFF /* GPU_osd_stub.cpp in Sources */,
+				6CB9A1731B29A37800F39AFF /* GPU.cpp in Sources */,
+				6CB9A1741B29A37800F39AFF /* JitCommon.cpp in Sources */,
+				6CB9A1751B29A37800F39AFF /* matrix.cpp in Sources */,
+				6CB9A1761B29A37800F39AFF /* mc.cpp in Sources */,
+				6CB9A1771B29A37800F39AFF /* MMU.cpp in Sources */,
+				6CB9A1781B29A37800F39AFF /* movie.cpp in Sources */,
+				6CB9A1791B29A37800F39AFF /* NDSSystem.cpp in Sources */,
+				6CB9A17A1B29A37800F39AFF /* path.cpp in Sources */,
+				6CB9A17B1B29A37800F39AFF /* rasterize.cpp in Sources */,
+				6CB9A17C1B29A37800F39AFF /* readwrite.cpp in Sources */,
+				6CB9A17D1B29A37800F39AFF /* render3D.cpp in Sources */,
+				6CB9A17E1B29A37800F39AFF /* ROMReader.cpp in Sources */,
+				6CB9A17F1B29A37800F39AFF /* rtc.cpp in Sources */,
+				6CB9A1801B29A37800F39AFF /* saves.cpp in Sources */,
+				6CB9A1811B29A37800F39AFF /* slot1.cpp in Sources */,
+				6CB9A1821B29A37800F39AFF /* SPU.cpp in Sources */,
+				6CB9A1831B29A37800F39AFF /* texcache.cpp in Sources */,
+				6CB9A1841B29A37800F39AFF /* thumb_instructions.cpp in Sources */,
+				6CB9A1851B29A37800F39AFF /* version.cpp in Sources */,
+				6CB9A1861B29A37800F39AFF /* wifi.cpp in Sources */,
+				6CB9A1871B29A37800F39AFF /* slot1_none.cpp in Sources */,
+				6CB9A1881B29A37800F39AFF /* slot1_r4.cpp in Sources */,
+				6CB9A1891B29A37800F39AFF /* slot1_retail_nand.cpp in Sources */,
+				6CB9A18A1B29A37800F39AFF /* slot1_retail.cpp in Sources */,
+				6CB9A18B1B29A37800F39AFF /* slot2_expMemory.cpp in Sources */,
+				6CB9A18C1B29A37900F39AFF /* slot2_gbagame.cpp in Sources */,
+				6CB9A18D1B29A37900F39AFF /* slot2_guitarGrip.cpp in Sources */,
+				6CB9A18E1B29A37900F39AFF /* slot2_mpcf.cpp in Sources */,
+				6CB9A18F1B29A37900F39AFF /* slot2_none.cpp in Sources */,
+				6CB9A1901B29A37900F39AFF /* slot2_paddle.cpp in Sources */,
+				6CB9A1911B29A37900F39AFF /* slot2_piano.cpp in Sources */,
+				6CB9A1921B29A37900F39AFF /* slot2_rumblepak.cpp in Sources */,
+				6CB9A1931B29A37900F39AFF /* 2xsai.cpp in Sources */,
+				6CB9A1941B29A37900F39AFF /* bilinear.cpp in Sources */,
+				6CB9A1951B29A37900F39AFF /* epx.cpp in Sources */,
+				6CB9A1961B29A37900F39AFF /* hq2x.cpp in Sources */,
+				6CB9A1971B29A37900F39AFF /* hq4x.cpp in Sources */,
+				6CB9A1981B29A37900F39AFF /* lq2x.cpp in Sources */,
+				6CB9A1991B29A37900F39AFF /* scanline.cpp in Sources */,
+				6CB9A19A1B29A37900F39AFF /* ConvertUTF.c in Sources */,
+				6CB9A19B1B29A37900F39AFF /* datetime.cpp in Sources */,
+				6CB9A19C1B29A37900F39AFF /* dlditool.cpp in Sources */,
+				6CB9A19D1B29A37900F39AFF /* emufat.cpp in Sources */,
+				6CB9A19E1B29A37900F39AFF /* FileMap.cpp in Sources */,
+				6CB9A19F1B29A37900F39AFF /* guid.cpp in Sources */,
+				6CB9A1A01B29A37900F39AFF /* md5.cpp in Sources */,
+				6CB9A1A11B29A37900F39AFF /* MemBuffer.cpp in Sources */,
+				6CB9A1A21B29A37900F39AFF /* task.cpp in Sources */,
+				6CB9A1A31B29A37900F39AFF /* vfat.cpp in Sources */,
+				6CB9A1A41B29A37900F39AFF /* xstring.cpp in Sources */,
+				6CB9A1A51B29A37900F39AFF /* tinystr.cpp in Sources */,
+				6CB9A1A61B29A37900F39AFF /* tinyxml.cpp in Sources */,
+				6CB9A1A71B29A37900F39AFF /* tinyxmlerror.cpp in Sources */,
+				6CB9A1A81B29A37900F39AFF /* tinyxmlparser.cpp in Sources */,
+				6CB9A1A91B29A37900F39AFF /* crc.cpp in Sources */,
+				6CB9A1AA1B29A37900F39AFF /* decrypt.cpp in Sources */,
+				6CB9A1AB1B29A37900F39AFF /* header.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1876,17 +2064,23 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Nitrogen/frameworks\"",
+					"\"$(SRCROOT)/Nitrogen\"",
+					"\"$(SRCROOT)/Nitrogen/Reveal\"",
 				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NDS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -1908,15 +2102,23 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Nitrogen/frameworks\"",
+					"\"$(SRCROOT)/Nitrogen\"",
+					"\"$(SRCROOT)/Nitrogen/Reveal\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NDS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -2135,7 +2337,6 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/Nitrogen/frameworks\"",
 					"\"$(SRCROOT)/Nitrogen\"",
-					"\"$(SRCROOT)/Nitrogen/dropbox\"",
 					"\"$(SRCROOT)/Nitrogen/Reveal\"",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
@@ -2177,7 +2378,6 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/Nitrogen/frameworks\"",
 					"\"$(SRCROOT)/Nitrogen\"",
-					"\"$(SRCROOT)/Nitrogen/dropbox\"",
 					"\"$(SRCROOT)/Nitrogen/Reveal\"",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
