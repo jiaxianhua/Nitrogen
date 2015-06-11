@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Nitrogen. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import "NitrogenEmulatorViewController.h"
 #import "GLProgram.h"
 #import "UIScreen+Widescreen.h"
@@ -21,6 +20,7 @@
 #include "emu.h"
 
 #import "NitrogenMFIControllerSupport.h"
+#import "NitrogenMain.h"
 
 #define STRINGIZE(x) #x
 #define STRINGIZE2(x) STRINGIZE(x)
