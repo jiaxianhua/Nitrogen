@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Nitrogen. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "NitrogenMain.h"
 #import "NitrogenROMTableViewController.h"
 #import "NitrogenEmulatorViewController.h"
 #import "SASlideMenuRootViewController.h"
@@ -26,17 +26,17 @@
     BOOL isDir;
     NSFileManager* fm = [NSFileManager defaultManager];
     
-    if (![fm fileExistsAtPath:AppDelegate.sharedInstance.batteryDir isDirectory:&isDir])
+    if (![fm fileExistsAtPath:NitrogenMain.sharedInstance.batteryDir isDirectory:&isDir])
     {
-        [fm createDirectoryAtPath:AppDelegate.sharedInstance.batteryDir withIntermediateDirectories:NO attributes:nil error:nil];
+        [fm createDirectoryAtPath:NitrogenMain.sharedInstance.batteryDir withIntermediateDirectories:NO attributes:nil error:nil];
         NSLog(@"Created Battery");
     } else {
         // move saved states from documents into battery directory
-        for (NSString *file in [fm contentsOfDirectoryAtPath:AppDelegate.sharedInstance.documentsPath error:NULL]) {
+        for (NSString *file in [fm contentsOfDirectoryAtPath:NitrogenMain.sharedInstance.documentsPath error:NULL]) {
             if ([file.pathExtension isEqualToString:@"dsv"]) {
                 NSError *err = nil;
-                [fm moveItemAtPath:[AppDelegate.sharedInstance.documentsPath stringByAppendingPathComponent:file]
-                            toPath:[AppDelegate.sharedInstance.batteryDir stringByAppendingPathComponent:file]
+                [fm moveItemAtPath:[NitrogenMain.sharedInstance.documentsPath stringByAppendingPathComponent:file]
+                            toPath:[NitrogenMain.sharedInstance.batteryDir stringByAppendingPathComponent:file]
                              error:&err];
                 if (err) NSLog(@"Could not move %@ to battery dir: %@", file, err);
             }
@@ -47,7 +47,7 @@
     romListTitle.title = NSLocalizedString(@"ROM_LIST", nil);
     
     // watch for changes in documents folder
-    docWatchHelper = [DocWatchHelper watcherForPath:AppDelegate.sharedInstance.documentsPath];
+    docWatchHelper = [DocWatchHelper watcherForPath:NitrogenMain.sharedInstance.documentsPath];
     
     // register for notifications
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
@@ -76,7 +76,7 @@
     }
     if (aNotification == nil || row == NSNotFound) {
         // reload all games
-        games = [NitrogenGame gamesAtPath:AppDelegate.sharedInstance.documentsPath saveStateDirectoryPath:AppDelegate.sharedInstance.batteryDir];
+        games = [NitrogenGame gamesAtPath:NitrogenMain.sharedInstance.documentsPath saveStateDirectoryPath:NitrogenMain.sharedInstance.batteryDir];
         [self.tableView reloadData];
     } else {
         // reload single row
@@ -95,7 +95,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NitrogenGame *game = games[indexPath.row];
         if ([[NSFileManager defaultManager] removeItemAtPath:game.path error:NULL]) {
-            games = [NitrogenGame gamesAtPath:AppDelegate.sharedInstance.documentsPath saveStateDirectoryPath:AppDelegate.sharedInstance.batteryDir];
+            games = [NitrogenGame gamesAtPath:NitrogenMain.sharedInstance.documentsPath saveStateDirectoryPath:NitrogenMain.sharedInstance.batteryDir];
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
@@ -147,7 +147,7 @@
         [slideMenuRoot rightMenuAction];
     } else {
         // start new game
-        [AppDelegate.sharedInstance startGame:game withSavedState:-1];
+        [NitrogenMain.sharedInstance startGame:game withSavedState:-1];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

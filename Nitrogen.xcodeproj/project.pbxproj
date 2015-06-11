@@ -26,6 +26,7 @@
 		4CA7846A17B31BA500097BC4 /* Default-Landscape~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7846917B31BA500097BC4 /* Default-Landscape~iPad.png */; };
 		4CA7846C17B31BB300097BC4 /* Default-Portrait@2x~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7846B17B31BB300097BC4 /* Default-Portrait@2x~iPad.png */; };
 		4CA7846E17B31BB600097BC4 /* Default-Portrait~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7846D17B31BB600097BC4 /* Default-Portrait~iPad.png */; };
+		6CB9A09D1B29861F00F39AFF /* NitrogenMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -274,6 +275,8 @@
 		4CA7846917B31BA500097BC4 /* Default-Landscape~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~iPad.png"; path = "Resources/required/Default-Landscape~iPad.png"; sourceTree = "<group>"; };
 		4CA7846B17B31BB300097BC4 /* Default-Portrait@2x~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~iPad.png"; path = "Resources/required/Default-Portrait@2x~iPad.png"; sourceTree = "<group>"; };
 		4CA7846D17B31BB600097BC4 /* Default-Portrait~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~iPad.png"; path = "Resources/required/Default-Portrait~iPad.png"; sourceTree = "<group>"; };
+		6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NitrogenMain.h; sourceTree = "<group>"; };
+		6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NitrogenMain.m; sourceTree = "<group>"; };
 		6CE58F2D1B29752A00248407 /* NDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE58F301B29752B00248407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE58F391B29783E00248407 /* NDSResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDSResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -656,6 +659,15 @@
 			name = "math-neon";
 			sourceTree = "<group>";
 		};
+		6CB9A09A1B2985B900F39AFF /* NDSMain */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */,
+				6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */,
+			);
+			name = NDSMain;
+			sourceTree = "<group>";
+		};
 		6CE58F2E1B29752A00248407 /* NDS */ = {
 			isa = PBXGroup;
 			children = (
@@ -985,6 +997,7 @@
 		BFCFE0F81764FBD3000A70CF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9A09A1B2985B900F39AFF /* NDSMain */,
 				9C8DDCCD19FDD8D500D03AB2 /* App Init */,
 				BFCFE12F17650ED0000A70CF /* DeSmuME */,
 				BF9D51751786A60E00B5864B /* Settings */,
@@ -1699,6 +1712,7 @@
 				8B4895C5178CE15D00BA61C3 /* NitrogenROMTableViewController.m in Sources */,
 				8B489B42178DAD6C00BA61C3 /* SASlideMenuRightMenuViewController.m in Sources */,
 				D3B8BB971794ACEF0061D1D8 /* ZAActivityBar.m in Sources */,
+				6CB9A09D1B29861F00F39AFF /* NitrogenMain.m in Sources */,
 				D3B8BB9A1794ACFE0061D1D8 /* SKBounceAnimation.m in Sources */,
 				8B7F89CB1794F35C00F3EA58 /* NitrogenRightMenuViewController.m in Sources */,
 				2838715F17950B69009B8E84 /* math_mat4.c in Sources */,
@@ -2052,6 +2066,7 @@
 				6CE58F321B29752B00248407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CE58F3D1B29783E00248407 /* Build configuration list for PBXNativeTarget "NDSResource" */ = {
 			isa = XCConfigurationList;
@@ -2060,6 +2075,7 @@
 				6CE58F3F1B29783E00248407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFCFE0EA1764FBD3000A70CF /* Build configuration list for PBXProject "Nitrogen" */ = {
 			isa = XCConfigurationList;

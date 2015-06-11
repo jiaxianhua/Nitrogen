@@ -7,7 +7,8 @@
 //
 
 #import "NitrogenRightMenuViewController.h"
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
+#import "NitrogenMain.h"
 
 @interface NitrogenRightMenuViewController ()
 
@@ -84,7 +85,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [AppDelegate.sharedInstance startGame:self.game withSavedState:indexPath.row - 1];
+    [NitrogenMain.sharedInstance startGame:self.game withSavedState:indexPath.row - 1];
 }
 
 @end
