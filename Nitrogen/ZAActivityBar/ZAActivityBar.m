@@ -283,7 +283,7 @@
 }
 
 + (void) showSuccessWithStatus:(NSString *)status duration:(NSTimeInterval)duration forAction:(NSString *)action {
-    [ZAActivityBar showImage:[UIImage imageNamed:@"ZAActivityBar.bundle/success.png"]
+    [ZAActivityBar showImage:[UIImage imageNamed:@"NDSResource.bundle/ZAActivityBar.bundle/success.png"]
                       status:status
                     duration:duration
                    forAction:action];
@@ -304,7 +304,7 @@
 }
 
 + (void) showErrorWithStatus:(NSString *)status duration:(NSTimeInterval)duration forAction:(NSString *)action {
-    [ZAActivityBar showImage:[UIImage imageNamed:@"ZAActivityBar.bundle/error.png"]
+    [ZAActivityBar showImage:[UIImage imageNamed:@"NDSResource.bundle/ZAActivityBar.bundle/error.png"]
                       status:status
                     duration:duration
                    forAction:action];

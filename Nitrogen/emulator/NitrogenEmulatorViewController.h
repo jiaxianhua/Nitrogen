@@ -18,4 +18,7 @@
 - (void)resumeEmulation;
 - (void)saveStateWithName:(NSString*)saveStateName;
 
+
+- (void)defaultsChanged:(NSNotification*)notification;
+
 @end

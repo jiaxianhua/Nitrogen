@@ -59,7 +59,7 @@
 // This is used to configure the menu button. The beahviour of the button should not be modified
 -(void) configureMenuButton:(UIButton *)menuButton{
     menuButton.frame = CGRectMake(0, 0, 40, 29);
-    [menuButton setImage:[UIImage imageNamed:@"menuicon.png"] forState:UIControlStateNormal];
+    [menuButton setImage:[UIImage imageNamed:@"NDSResource.bundle/menuicon.png"] forState:UIControlStateNormal];
 }
 
 //restricts pan gesture interation to 50px on the left and right of the view.

@@ -50,6 +50,7 @@ static NitrogenMain *sharedInstance = nil;
     }
     
     NitrogenEmulatorViewController *emulatorViewController = (NitrogenEmulatorViewController *)[[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"emulatorView"];
+    [emulatorViewController defaultsChanged:nil];
     emulatorViewController.game = game;
     emulatorViewController.saveState = [game pathForSaveStateAtIndex:savedState];
     [NitrogenMain sharedInstance].currentEmulatorViewController = emulatorViewController;

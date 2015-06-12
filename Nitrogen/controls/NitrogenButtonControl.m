@@ -28,7 +28,7 @@
     if (self) {
         // Initialization code
         
-        self.backgroundImageView.image = [UIImage imageNamed:@"ABXYPad"];
+        self.backgroundImageView.image = [UIImage imageNamed:@"NDSResource.bundle/ABXYPad"];
     }
     return self;
 }

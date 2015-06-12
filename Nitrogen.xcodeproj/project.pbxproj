@@ -209,6 +209,7 @@
 		6CB9A2761B2AC39400F39AFF /* OLGhostAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4895BE178CCBEE00BA61C3 /* OLGhostAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2771B2AC39400F39AFF /* ZAActivityBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB941794ACEF0061D1D8 /* ZAActivityBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2781B2AC39400F39AFF /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB981794ACFE0061D1D8 /* SKBounceAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2911B2AE5B000F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE58F391B29783E00248407 /* NDSResource.bundle */; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -1762,6 +1763,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB9A2911B2AE5B000F39AFF /* NDSResource.bundle in Resources */,
 				28DA4A481787FD7F002236A4 /* Select.png in Resources */,
 				28DA4A52178802FB002236A4 /* RTrigger.png in Resources */,
 				28DA4A491787FD7F002236A4 /* Select@2x.png in Resources */,

@@ -50,9 +50,9 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DetailCell"];
     
-    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"row"]];
-    cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rowselected"]];
-    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"disclosure"]];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NDSResource.bundle/row"]];
+    cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NDSResource.bundle/rowselected"]];
+    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NDSResource.bundle/disclosure"]];
     
     // text
     cell.textLabel.text = NSLocalizedString(@"LAUNCH_GAME", nil);

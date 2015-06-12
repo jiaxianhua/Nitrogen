@@ -30,7 +30,7 @@
         [self addSubview:_backgroundImageView];
         
         _buttonImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 56, 56)];
-        _buttonImageView.image = [UIImage imageNamed:@"JoystickButton"];
+        _buttonImageView.image = [UIImage imageNamed:@"NDSResource.bundle/JoystickButton"];
         _buttonImageView.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
         [self addSubview:_buttonImageView];
         
@@ -116,13 +116,13 @@
     switch (style) {
         case NitrogenDirectionalControlStyleDPad: {
             self.buttonImageView.hidden = YES;
-            self.backgroundImageView.image = [UIImage imageNamed:@"DPad"];
+            self.backgroundImageView.image = [UIImage imageNamed:@"NDSResource.bundle/DPad"];
             break;
         }
             
         case NitrogenDirectionalControlStyleJoystick: {
             self.buttonImageView.hidden = NO;
-            self.backgroundImageView.image = [UIImage imageNamed:@"JoystickBackground"];
+            self.backgroundImageView.image = [UIImage imageNamed:@"NDSResource.bundle/JoystickBackground"];
             break;
         }
     }
