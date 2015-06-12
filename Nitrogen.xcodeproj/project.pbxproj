@@ -191,6 +191,24 @@
 		6CB9A2571B2AB8E500F39AFF /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099717876A6B0060B347 /* mztools.c */; };
 		6CB9A2581B2AB8E500F39AFF /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099917876A6B0060B347 /* unzip.c */; };
 		6CB9A2591B2AB8E500F39AFF /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099B17876A6B0060B347 /* zip.c */; };
+		6CB9A2671B2AC39300F39AFF /* NitrogenROMTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096017872BF90060B347 /* NitrogenROMTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2681B2AC39300F39AFF /* NitrogenSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096317872C080060B347 /* NitrogenSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2691B2AC39400F39AFF /* NitrogenMFIControllerSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C345B67018906BB40065A795 /* NitrogenMFIControllerSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A26A1B2AC39400F39AFF /* NitrogenButtonControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096617872C190060B347 /* NitrogenButtonControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A26B1B2AC39400F39AFF /* NitrogenDirectionalControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096817872C190060B347 /* NitrogenDirectionalControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A26C1B2AC39400F39AFF /* GLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096E17872C320060B347 /* GLProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A26D1B2AC39400F39AFF /* DocWatchHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA097217872C3F0060B347 /* DocWatchHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A26E1B2AC39400F39AFF /* NitrogenRightMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7F89C91794F35C00F3EA58 /* NitrogenRightMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A26F1B2AC39400F39AFF /* UIScreen+Widescreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA097817872C4B0060B347 /* UIScreen+Widescreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2701B2AC39400F39AFF /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA099417876A6B0060B347 /* crypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2711B2AC39400F39AFF /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA099617876A6B0060B347 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2721B2AC39400F39AFF /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA099817876A6B0060B347 /* mztools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2731B2AC39400F39AFF /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA099A17876A6B0060B347 /* unzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2741B2AC39400F39AFF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA099C17876A6B0060B347 /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2751B2AC39400F39AFF /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA099D17876A6B0060B347 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2761B2AC39400F39AFF /* OLGhostAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4895BE178CCBEE00BA61C3 /* OLGhostAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2771B2AC39400F39AFF /* ZAActivityBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB941794ACEF0061D1D8 /* ZAActivityBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2781B2AC39400F39AFF /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB981794ACFE0061D1D8 /* SKBounceAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -1518,6 +1536,24 @@
 				6CB9A1FF1B2A8EE700F39AFF /* SASlideMenuRightMenuSegue.h in Headers */,
 				6CB9A2311B2AB0C300F39AFF /* NitrogenMain.m in Headers */,
 				6CB9A2001B2A8EE700F39AFF /* SASlideMenuRightMenuViewController.h in Headers */,
+				6CB9A2671B2AC39300F39AFF /* NitrogenROMTableViewController.h in Headers */,
+				6CB9A2681B2AC39300F39AFF /* NitrogenSettingsViewController.h in Headers */,
+				6CB9A2691B2AC39400F39AFF /* NitrogenMFIControllerSupport.h in Headers */,
+				6CB9A26A1B2AC39400F39AFF /* NitrogenButtonControl.h in Headers */,
+				6CB9A26B1B2AC39400F39AFF /* NitrogenDirectionalControl.h in Headers */,
+				6CB9A26C1B2AC39400F39AFF /* GLProgram.h in Headers */,
+				6CB9A26D1B2AC39400F39AFF /* DocWatchHelper.h in Headers */,
+				6CB9A26E1B2AC39400F39AFF /* NitrogenRightMenuViewController.h in Headers */,
+				6CB9A26F1B2AC39400F39AFF /* UIScreen+Widescreen.h in Headers */,
+				6CB9A2701B2AC39400F39AFF /* crypt.h in Headers */,
+				6CB9A2711B2AC39400F39AFF /* ioapi.h in Headers */,
+				6CB9A2721B2AC39400F39AFF /* mztools.h in Headers */,
+				6CB9A2731B2AC39400F39AFF /* unzip.h in Headers */,
+				6CB9A2741B2AC39400F39AFF /* zip.h in Headers */,
+				6CB9A2751B2AC39400F39AFF /* SSZipArchive.h in Headers */,
+				6CB9A2761B2AC39400F39AFF /* OLGhostAlertView.h in Headers */,
+				6CB9A2771B2AC39400F39AFF /* ZAActivityBar.h in Headers */,
+				6CB9A2781B2AC39400F39AFF /* SKBounceAnimation.h in Headers */,
 				6CB9A22F1B2AB09700F39AFF /* NitrogenMain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
