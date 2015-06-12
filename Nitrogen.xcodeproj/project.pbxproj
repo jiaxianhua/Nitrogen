@@ -143,7 +143,20 @@
 		6CB9A1BC1B29A77C00F39AFF /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE58F2D1B29752A00248407 /* NDS.framework */; };
 		6CB9A1BD1B29A79E00F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE58F391B29783E00248407 /* NDSResource.bundle */; };
 		6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */; };
-		6CB9A1C01B29A9DF00F39AFF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F3B6618EF82F1007A4BA0 /* MainStoryboard.storyboard */; };
+		6CB9A1E11B2A8C1900F39AFF /* SASlideMenuRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F74178B48FD00FD010A /* SASlideMenuRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1F61B2A8E1600F39AFF /* SASlideMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F76178B48FD00FD010A /* SASlideMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1F71B2A8EE700F39AFF /* NitrogenSideBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEFF482178B468700EEE55A /* NitrogenSideBarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1F81B2A8EE700F39AFF /* MenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F83178B4A1700FD010A /* MenuCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1F91B2A8EE700F39AFF /* SASlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F66178B48FD00FD010A /* SASlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1FA1B2A8EE700F39AFF /* SASlideMenuDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F68178B48FD00FD010A /* SASlideMenuDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1FB1B2A8EE700F39AFF /* SASlideMenuDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F69178B48FD00FD010A /* SASlideMenuDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1FC1B2A8EE700F39AFF /* SASlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F6A178B48FD00FD010A /* SASlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1FD1B2A8EE700F39AFF /* SASlideMenuNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F6C178B48FD00FD010A /* SASlideMenuNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1FE1B2A8EE700F39AFF /* SASlideMenuPushSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F6E178B48FD00FD010A /* SASlideMenuPushSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A1FF1B2A8EE700F39AFF /* SASlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F70178B48FD00FD010A /* SASlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2001B2A8EE700F39AFF /* SASlideMenuRightMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B489B40178DAD6A00BA61C3 /* SASlideMenuRightMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2041B2A928C00F39AFF /* NDS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB9A2031B2A928C00F39AFF /* NDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A22E1B2A96CB00F39AFF /* NitrogenEmulatorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096C17872C320060B347 /* NitrogenEmulatorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -389,6 +402,7 @@
 		6CB9A0B11B298B6300F39AFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6CB9A0B41B298B6300F39AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */ = {isa = PBXFileReference; lastKnownFileType = file; path = NDS0032.nds; sourceTree = "<group>"; };
+		6CB9A2031B2A928C00F39AFF /* NDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDS.h; sourceTree = "<group>"; };
 		6CE58F2D1B29752A00248407 /* NDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE58F301B29752B00248407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE58F391B29783E00248407 /* NDSResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDSResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -818,6 +832,7 @@
 			isa = PBXGroup;
 			children = (
 				6CE58F2F1B29752B00248407 /* Supporting Files */,
+				6CB9A2031B2A928C00F39AFF /* NDS.h */,
 			);
 			path = NDS;
 			sourceTree = "<group>";
@@ -1453,6 +1468,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB9A2041B2A928C00F39AFF /* NDS.h in Headers */,
+				6CB9A1E11B2A8C1900F39AFF /* SASlideMenuRootViewController.h in Headers */,
+				6CB9A1F61B2A8E1600F39AFF /* SASlideMenuViewController.h in Headers */,
+				6CB9A1F71B2A8EE700F39AFF /* NitrogenSideBarViewController.h in Headers */,
+				6CB9A1F81B2A8EE700F39AFF /* MenuCell.h in Headers */,
+				6CB9A1F91B2A8EE700F39AFF /* SASlideMenuContentSegue.h in Headers */,
+				6CB9A1FA1B2A8EE700F39AFF /* SASlideMenuDataSource.h in Headers */,
+				6CB9A1FB1B2A8EE700F39AFF /* SASlideMenuDelegate.h in Headers */,
+				6CB9A1FC1B2A8EE700F39AFF /* SASlideMenuLeftMenuSegue.h in Headers */,
+				6CB9A22E1B2A96CB00F39AFF /* NitrogenEmulatorViewController.h in Headers */,
+				6CB9A1FD1B2A8EE700F39AFF /* SASlideMenuNavigationController.h in Headers */,
+				6CB9A1FE1B2A8EE700F39AFF /* SASlideMenuPushSegue.h in Headers */,
+				6CB9A1FF1B2A8EE700F39AFF /* SASlideMenuRightMenuSegue.h in Headers */,
+				6CB9A2001B2A8EE700F39AFF /* SASlideMenuRightMenuViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,7 +1629,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CB9A1C01B29A9DF00F39AFF /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2261,7 +2289,10 @@
 					"-DHAVE_LIBZ",
 					"-marm",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -2325,7 +2356,10 @@
 					"-DIOS",
 					"-DHAVE_LIBZ",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";

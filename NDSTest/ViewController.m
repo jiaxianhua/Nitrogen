@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+#import "NDS.h"
 
 @interface ViewController ()
 
@@ -26,11 +27,10 @@
 }
 
 - (IBAction)OpenNDS:(UIButton *)sender {
-    
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:bundle];
-    UIViewController *vc = [sb instantiateInitialViewController];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle];
+    SASlideMenuRootViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SASlideMenuRootViewController"];
     
-        [self showViewController:vc sender:self];
+    [self showViewController:vc sender:self];
 }
 @end
