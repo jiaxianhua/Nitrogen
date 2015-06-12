@@ -140,8 +140,6 @@
 		6CB9A1B91B29A38600F39AFF /* partition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE218176634AF000A70CF /* partition.cpp */; };
 		6CB9A1BA1B29A38600F39AFF /* math_mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2838715D17950B69009B8E84 /* math_mat4.c */; };
 		6CB9A1BB1B29A38600F39AFF /* math_sqrtf.c in Sources */ = {isa = PBXBuildFile; fileRef = 2838715E17950B69009B8E84 /* math_sqrtf.c */; };
-		6CB9A1BC1B29A77C00F39AFF /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE58F2D1B29752A00248407 /* NDS.framework */; };
-		6CB9A1BD1B29A79E00F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE58F391B29783E00248407 /* NDSResource.bundle */; };
 		6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */; };
 		6CB9A1E11B2A8C1900F39AFF /* SASlideMenuRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F74178B48FD00FD010A /* SASlideMenuRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A1F61B2A8E1600F39AFF /* SASlideMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B305F76178B48FD00FD010A /* SASlideMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -210,6 +208,14 @@
 		6CB9A2771B2AC39400F39AFF /* ZAActivityBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB941794ACEF0061D1D8 /* ZAActivityBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2781B2AC39400F39AFF /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB981794ACFE0061D1D8 /* SKBounceAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2911B2AE5B000F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE58F391B29783E00248407 /* NDSResource.bundle */; };
+		6CB9A2951B2AE8B500F39AFF /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9A2941B2AE8B500F39AFF /* NDS.framework */; };
+		6CB9A2971B2AE8BD00F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A2961B2AE8BD00F39AFF /* NDSResource.bundle */; };
+		6CB9A2991B2AE91C00F39AFF /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */; };
+		6CB9A29A1B2AE92900F39AFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9A17674D93000911CF /* libz.dylib */; };
+		6CB9A29B1B2AE94200F39AFF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9017674902000911CF /* GLKit.framework */; };
+		6CB9A29D1B2AE96F00F39AFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFE0F61764FBD3000A70CF /* CoreGraphics.framework */; };
+		6CB9A29E1B2AE97F00F39AFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D514717865D5100B5864B /* AudioToolbox.framework */; };
+		6CB9A29F1B2AE99D00F39AFF /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DD2851891E5390075B66C /* GameController.framework */; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -456,6 +462,9 @@
 		6CB9A0B41B298B6300F39AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */ = {isa = PBXFileReference; lastKnownFileType = file; path = NDS0032.nds; sourceTree = "<group>"; };
 		6CB9A2031B2A928C00F39AFF /* NDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDS.h; sourceTree = "<group>"; };
+		6CB9A2941B2AE8B500F39AFF /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
+		6CB9A2961B2AE8BD00F39AFF /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
+		6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		6CE58F2D1B29752A00248407 /* NDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE58F301B29752B00248407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE58F391B29783E00248407 /* NDSResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDSResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -783,7 +792,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CB9A1BC1B29A77C00F39AFF /* NDS.framework in Frameworks */,
+				6CB9A29F1B2AE99D00F39AFF /* GameController.framework in Frameworks */,
+				6CB9A29E1B2AE97F00F39AFF /* AudioToolbox.framework in Frameworks */,
+				6CB9A29D1B2AE96F00F39AFF /* CoreGraphics.framework in Frameworks */,
+				6CB9A29B1B2AE94200F39AFF /* GLKit.framework in Frameworks */,
+				6CB9A29A1B2AE92900F39AFF /* libz.dylib in Frameworks */,
+				6CB9A2991B2AE91C00F39AFF /* libstdc++.6.0.9.dylib in Frameworks */,
+				6CB9A2951B2AE8B500F39AFF /* NDS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +874,8 @@
 		6CB9A0A31B298B6300F39AFF /* NDSTest */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9A2961B2AE8BD00F39AFF /* NDSResource.bundle */,
+				6CB9A2941B2AE8B500F39AFF /* NDS.framework */,
 				6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */,
 				6CB9A0A81B298B6300F39AFF /* AppDelegate.h */,
 				6CB9A0A91B298B6300F39AFF /* AppDelegate.m */,
@@ -1175,6 +1192,7 @@
 		BFCFE0F11764FBD3000A70CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */,
 				9C4DD2851891E5390075B66C /* GameController.framework */,
 				D3B8BB911794ACCE0061D1D8 /* DropboxSDK.framework */,
 				D32C39DA178E749C00E6809E /* libc++.dylib */,
@@ -1693,7 +1711,7 @@
 			files = (
 				6CB9A0B01B298B6300F39AFF /* Main.storyboard in Resources */,
 				6CB9A0B51B298B6300F39AFF /* LaunchScreen.xib in Resources */,
-				6CB9A1BD1B29A79E00F39AFF /* NDSResource.bundle in Resources */,
+				6CB9A2971B2AE8BD00F39AFF /* NDSResource.bundle in Resources */,
 				6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */,
 				6CB9A0B21B298B6300F39AFF /* Images.xcassets in Resources */,
 			);
@@ -2164,6 +2182,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NDSTest",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -2192,6 +2214,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NDSTest",
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NDSTest/Info.plist;

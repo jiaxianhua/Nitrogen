@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-#import "NDS.h"
+#import <NDS/NDS.h>
+#import <NDS/NitrogenMain.h>
 
 @interface ViewController ()
 
@@ -27,10 +28,11 @@
 }
 
 - (IBAction)OpenNDS:(UIButton *)sender {
-    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle];
-    SASlideMenuRootViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SASlideMenuRootViewController"];
-    
-    [self showViewController:vc sender:self];
+    NSArray *games = [NitrogenGame gamesAtPath:NitrogenMain.sharedInstance.documentsPath saveStateDirectoryPath:NitrogenMain.sharedInstance.batteryDir];
+    if (games.count > 0) {
+        NitrogenGame *game = games[0];
+        
+        [[NitrogenMain sharedInstance] startGame:game withSavedState:-1];
+    }
 }
 @end
