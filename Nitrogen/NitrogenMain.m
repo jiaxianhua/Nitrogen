@@ -40,7 +40,16 @@ static NitrogenMain *sharedInstance = nil;
 - (void)startGame:(NitrogenGame *)game withSavedState:(NSInteger)savedState
 {
     // TODO: check if resuming current game, also call EMU_closeRom maybe
-    NitrogenEmulatorViewController *emulatorViewController = (NitrogenEmulatorViewController *)[[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"emulatorView"];
+    
+    NSBundle *bundle = nil;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *appDirectory = [[NSBundle mainBundle] bundlePath];
+    NSString *filePath = [appDirectory stringByAppendingPathComponent:@"NDSResource.bundle"];
+    if([fileManager fileExistsAtPath:filePath]) {
+        bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
+    }
+    
+    NitrogenEmulatorViewController *emulatorViewController = (NitrogenEmulatorViewController *)[[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"emulatorView"];
     emulatorViewController.game = game;
     emulatorViewController.saveState = [game pathForSaveStateAtIndex:savedState];
     [NitrogenMain sharedInstance].currentEmulatorViewController = emulatorViewController;

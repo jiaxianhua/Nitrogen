@@ -157,6 +157,40 @@
 		6CB9A2001B2A8EE700F39AFF /* SASlideMenuRightMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B489B40178DAD6A00BA61C3 /* SASlideMenuRightMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2041B2A928C00F39AFF /* NDS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB9A2031B2A928C00F39AFF /* NDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A22E1B2A96CB00F39AFF /* NitrogenEmulatorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEA096C17872C320060B347 /* NitrogenEmulatorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A22F1B2AB09700F39AFF /* NitrogenMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2301B2AB0A900F39AFF /* NitrogenGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 28387161179561F5009B8E84 /* NitrogenGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2311B2AB0C300F39AFF /* NitrogenMain.m in Headers */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB9A2391B2AB7D600F39AFF /* NitrogenMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; };
+		6CB9A23A1B2AB7D600F39AFF /* NitrogenROMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4895C4178CE15D00BA61C3 /* NitrogenROMTableViewController.m */; };
+		6CB9A23B1B2AB7D600F39AFF /* sndcoreaudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098717872CF40060B347 /* sndcoreaudio.mm */; };
+		6CB9A23C1B2AB7D600F39AFF /* NitrogenGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 28387162179561F5009B8E84 /* NitrogenGame.m */; };
+		6CB9A23D1B2AB7D600F39AFF /* NitrogenSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096417872C080060B347 /* NitrogenSettingsViewController.m */; };
+		6CB9A23E1B2AB7D600F39AFF /* NitrogenMFIControllerSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = C345B67118906BB40065A795 /* NitrogenMFIControllerSupport.mm */; };
+		6CB9A23F1B2AB7D600F39AFF /* NitrogenButtonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096717872C190060B347 /* NitrogenButtonControl.m */; };
+		6CB9A2401B2AB7D600F39AFF /* NitrogenDirectionalControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096917872C190060B347 /* NitrogenDirectionalControl.m */; };
+		6CB9A2411B2AB7D600F39AFF /* NitrogenEmulatorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096D17872C320060B347 /* NitrogenEmulatorViewController.mm */; };
+		6CB9A2421B2AB7D600F39AFF /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096F17872C320060B347 /* GLProgram.m */; };
+		6CB9A2431B2AB7D600F39AFF /* DocWatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA097317872C3F0060B347 /* DocWatchHelper.m */; };
+		6CB9A2441B2AB7D600F39AFF /* NitrogenRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7F89CA1794F35C00F3EA58 /* NitrogenRightMenuViewController.m */; };
+		6CB9A2451B2AB7D600F39AFF /* UIScreen+Widescreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA097917872C4B0060B347 /* UIScreen+Widescreen.m */; };
+		6CB9A2461B2AB7D600F39AFF /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099E17876A6B0060B347 /* SSZipArchive.m */; };
+		6CB9A2471B2AB7D600F39AFF /* NitrogenSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFF483178B468700EEE55A /* NitrogenSideBarViewController.m */; };
+		6CB9A2481B2AB7D600F39AFF /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F84178B4A1700FD010A /* MenuCell.m */; };
+		6CB9A2491B2AB7D600F39AFF /* SASlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F67178B48FD00FD010A /* SASlideMenuContentSegue.m */; };
+		6CB9A24A1B2AB7D600F39AFF /* SASlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F6B178B48FD00FD010A /* SASlideMenuLeftMenuSegue.m */; };
+		6CB9A24B1B2AB7D600F39AFF /* SASlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F6D178B48FD00FD010A /* SASlideMenuNavigationController.m */; };
+		6CB9A24C1B2AB7D600F39AFF /* SASlideMenuPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F6F178B48FD00FD010A /* SASlideMenuPushSegue.m */; };
+		6CB9A24D1B2AB7D600F39AFF /* SASlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F71178B48FD00FD010A /* SASlideMenuRightMenuSegue.m */; };
+		6CB9A24E1B2AB7D600F39AFF /* SASlideMenuRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B489B41178DAD6A00BA61C3 /* SASlideMenuRightMenuViewController.m */; };
+		6CB9A24F1B2AB7D600F39AFF /* SASlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F75178B48FD00FD010A /* SASlideMenuRootViewController.m */; };
+		6CB9A2501B2AB7D600F39AFF /* SASlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B305F77178B48FD00FD010A /* SASlideMenuViewController.m */; };
+		6CB9A2511B2AB7D600F39AFF /* OLGhostAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4895BF178CCBEE00BA61C3 /* OLGhostAlertView.m */; };
+		6CB9A2521B2AB7D600F39AFF /* ZAActivityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8BB951794ACEF0061D1D8 /* ZAActivityBar.m */; };
+		6CB9A2531B2AB7D600F39AFF /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8BB991794ACFE0061D1D8 /* SKBounceAnimation.m */; };
+		6CB9A2561B2AB8E500F39AFF /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099517876A6B0060B347 /* ioapi.c */; };
+		6CB9A2571B2AB8E500F39AFF /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099717876A6B0060B347 /* mztools.c */; };
+		6CB9A2581B2AB8E500F39AFF /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099917876A6B0060B347 /* unzip.c */; };
+		6CB9A2591B2AB8E500F39AFF /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA099B17876A6B0060B347 /* zip.c */; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -1473,6 +1507,7 @@
 				6CB9A1F61B2A8E1600F39AFF /* SASlideMenuViewController.h in Headers */,
 				6CB9A1F71B2A8EE700F39AFF /* NitrogenSideBarViewController.h in Headers */,
 				6CB9A1F81B2A8EE700F39AFF /* MenuCell.h in Headers */,
+				6CB9A2301B2AB0A900F39AFF /* NitrogenGame.h in Headers */,
 				6CB9A1F91B2A8EE700F39AFF /* SASlideMenuContentSegue.h in Headers */,
 				6CB9A1FA1B2A8EE700F39AFF /* SASlideMenuDataSource.h in Headers */,
 				6CB9A1FB1B2A8EE700F39AFF /* SASlideMenuDelegate.h in Headers */,
@@ -1481,7 +1516,9 @@
 				6CB9A1FD1B2A8EE700F39AFF /* SASlideMenuNavigationController.h in Headers */,
 				6CB9A1FE1B2A8EE700F39AFF /* SASlideMenuPushSegue.h in Headers */,
 				6CB9A1FF1B2A8EE700F39AFF /* SASlideMenuRightMenuSegue.h in Headers */,
+				6CB9A2311B2AB0C300F39AFF /* NitrogenMain.m in Headers */,
 				6CB9A2001B2A8EE700F39AFF /* SASlideMenuRightMenuViewController.h in Headers */,
+				6CB9A22F1B2AB09700F39AFF /* NitrogenMain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1771,6 +1808,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB9A2561B2AB8E500F39AFF /* ioapi.c in Sources */,
+				6CB9A2571B2AB8E500F39AFF /* mztools.c in Sources */,
+				6CB9A2581B2AB8E500F39AFF /* unzip.c in Sources */,
+				6CB9A2591B2AB8E500F39AFF /* zip.c in Sources */,
+				6CB9A2391B2AB7D600F39AFF /* NitrogenMain.m in Sources */,
+				6CB9A23A1B2AB7D600F39AFF /* NitrogenROMTableViewController.m in Sources */,
+				6CB9A23B1B2AB7D600F39AFF /* sndcoreaudio.mm in Sources */,
+				6CB9A23C1B2AB7D600F39AFF /* NitrogenGame.m in Sources */,
+				6CB9A23D1B2AB7D600F39AFF /* NitrogenSettingsViewController.m in Sources */,
+				6CB9A23E1B2AB7D600F39AFF /* NitrogenMFIControllerSupport.mm in Sources */,
+				6CB9A23F1B2AB7D600F39AFF /* NitrogenButtonControl.m in Sources */,
+				6CB9A2401B2AB7D600F39AFF /* NitrogenDirectionalControl.m in Sources */,
+				6CB9A2411B2AB7D600F39AFF /* NitrogenEmulatorViewController.mm in Sources */,
+				6CB9A2421B2AB7D600F39AFF /* GLProgram.m in Sources */,
+				6CB9A2431B2AB7D600F39AFF /* DocWatchHelper.m in Sources */,
+				6CB9A2441B2AB7D600F39AFF /* NitrogenRightMenuViewController.m in Sources */,
+				6CB9A2451B2AB7D600F39AFF /* UIScreen+Widescreen.m in Sources */,
+				6CB9A2461B2AB7D600F39AFF /* SSZipArchive.m in Sources */,
+				6CB9A2471B2AB7D600F39AFF /* NitrogenSideBarViewController.m in Sources */,
+				6CB9A2481B2AB7D600F39AFF /* MenuCell.m in Sources */,
+				6CB9A2491B2AB7D600F39AFF /* SASlideMenuContentSegue.m in Sources */,
+				6CB9A24A1B2AB7D600F39AFF /* SASlideMenuLeftMenuSegue.m in Sources */,
+				6CB9A24B1B2AB7D600F39AFF /* SASlideMenuNavigationController.m in Sources */,
+				6CB9A24C1B2AB7D600F39AFF /* SASlideMenuPushSegue.m in Sources */,
+				6CB9A24D1B2AB7D600F39AFF /* SASlideMenuRightMenuSegue.m in Sources */,
+				6CB9A24E1B2AB7D600F39AFF /* SASlideMenuRightMenuViewController.m in Sources */,
+				6CB9A24F1B2AB7D600F39AFF /* SASlideMenuRootViewController.m in Sources */,
+				6CB9A2501B2AB7D600F39AFF /* SASlideMenuViewController.m in Sources */,
+				6CB9A2511B2AB7D600F39AFF /* OLGhostAlertView.m in Sources */,
+				6CB9A2521B2AB7D600F39AFF /* ZAActivityBar.m in Sources */,
+				6CB9A2531B2AB7D600F39AFF /* SKBounceAnimation.m in Sources */,
 				6CB9A1AC1B29A38500F39AFF /* ArmLJit.cpp in Sources */,
 				6CB9A1AD1B29A38600F39AFF /* metaspu.cpp in Sources */,
 				6CB9A1AE1B29A38600F39AFF /* SndOut.cpp in Sources */,
@@ -2181,7 +2249,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2210,7 +2278,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

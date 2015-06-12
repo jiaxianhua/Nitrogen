@@ -141,7 +141,15 @@
     if (game.numberOfSaveStates > 0) {
         // show right menu with save states
         SASlideMenuRootViewController *slideMenuRoot = (SASlideMenuRootViewController*)self.navigationController.parentViewController;
-        NitrogenRightMenuViewController *rightMenu = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"rightMenu"];
+        NSBundle *bundle = nil;
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString *appDirectory = [[NSBundle mainBundle] bundlePath];
+        NSString *filePath = [appDirectory stringByAppendingPathComponent:@"NDSResource.bundle"];
+        if([fileManager fileExistsAtPath:filePath]) {
+            bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
+        }
+        
+        NitrogenRightMenuViewController *rightMenu = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"rightMenu"];
         slideMenuRoot.rightMenu = rightMenu;
         rightMenu.game = game;
         [slideMenuRoot rightMenuAction];

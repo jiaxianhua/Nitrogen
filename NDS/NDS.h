@@ -30,3 +30,4 @@ FOUNDATION_EXPORT const unsigned char XXVersionString[];
 #import <NDS/SASlideMenuViewController.h>
 
 #import <NDS/NitrogenEmulatorViewController.h>
+#import <NDS/NitrogenGame.h>
