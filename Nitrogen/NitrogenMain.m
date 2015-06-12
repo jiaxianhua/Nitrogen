@@ -53,9 +53,13 @@ static NitrogenMain *sharedInstance = nil;
     emulatorViewController.game = game;
     emulatorViewController.saveState = [game pathForSaveStateAtIndex:savedState];
     [NitrogenMain sharedInstance].currentEmulatorViewController = emulatorViewController;
-    SASlideMenuRootViewController *rootViewController = (SASlideMenuRootViewController*)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [rootViewController doSlideIn:nil];
-    [rootViewController presentModalViewController:emulatorViewController animated:YES];
+    
+    UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    SASlideMenuRootViewController *sasvc = (SASlideMenuRootViewController *)vc;
+    if ([sasvc respondsToSelector:@selector(doSlideIn:)]) {
+        [sasvc doSlideIn:nil];
+    }
+    [vc showDetailViewController:emulatorViewController sender:nil];
 }
 
 @end
