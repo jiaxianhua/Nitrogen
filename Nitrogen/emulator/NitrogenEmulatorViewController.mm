@@ -193,6 +193,8 @@ const float textureVert[] =
 
 - (void)viewWillLayoutSubviews
 {
+    self.controllerContainerView.alpha = 0.1;
+    self.dismissButton.alpha = 0.1;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     BOOL isLandscape = self.view.bounds.size.width > self.view.bounds.size.height;
     BOOL isWidescreen = [[UIScreen mainScreen] isWidescreen];
@@ -239,6 +241,7 @@ const float textureVert[] =
         self.directionalControl.center = CGPointMake(60, 172);
         self.buttonControl.center = CGPointMake(self.view.bounds.size.width-60, 172);
         self.controllerContainerView.alpha = self.dismissButton.alpha = MAX(0.1, [defaults floatForKey:@"controlOpacity"]);
+        NSLog(@"%e, %e", [defaults floatForKey:@"controlOpacity"], self.controllerContainerView.alpha);
         self.fpsLabel.frame = CGRectMake(6, 0, 70, 24);
     }
 }
@@ -255,7 +258,7 @@ const float textureVert[] =
         rect = CGRectMake(self.view.bounds.size.width - (self.view.bounds.size.width + self.view.bounds.size.height/1.5)/2, 0, self.view.bounds.size.height/1.5, self.view.bounds.size.height);
         if (extWindow) rect.size.height /= 2;
     } else if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width*1.5);
+        rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
         if (extWindow) rect.size.height /= 2;
     }
     

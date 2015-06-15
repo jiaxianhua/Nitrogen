@@ -22,6 +22,7 @@
 		28E7A6EE1787D110003A9C5B /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6ED1787D110003A9C5B /* Defaults.plist */; };
 		28E7A6F51787D8D5003A9C5B /* HideEmulator.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6F31787D8D5003A9C5B /* HideEmulator.png */; };
 		28E7A6F61787D8D5003A9C5B /* HideEmulator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6F41787D8D5003A9C5B /* HideEmulator@2x.png */; };
+		6C6A1AED1B2EC8B70055E808 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C6A1AEC1B2EC8B70055E808 /* NDSResource.bundle */; };
 		6CB9A09D1B29861F00F39AFF /* NitrogenMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; };
 		6CB9A0A71B298B6300F39AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A61B298B6300F39AFF /* main.m */; };
 		6CB9A0AA1B298B6300F39AFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A91B298B6300F39AFF /* AppDelegate.m */; };
@@ -38,12 +39,10 @@
 		6CB9A0D01B29998000F39AFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFE0F21764FBD3000A70CF /* UIKit.framework */; };
 		6CB9A0D11B29998700F39AFF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9017674902000911CF /* GLKit.framework */; };
 		6CB9A0D21B29998E00F39AFF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F921767490A000911CF /* OpenGLES.framework */; };
-		6CB9A0D31B29999400F39AFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9A17674D93000911CF /* libz.dylib */; };
 		6CB9A0D41B29999A00F39AFF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39D2178E73A600E6809E /* CFNetwork.framework */; };
 		6CB9A0D51B2999B000F39AFF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39D4178E73B500E6809E /* Security.framework */; };
 		6CB9A0D61B2999B600F39AFF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39D6178E73C200E6809E /* SystemConfiguration.framework */; };
 		6CB9A0D71B2999BC00F39AFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39D8178E748000E6809E /* QuartzCore.framework */; };
-		6CB9A0D81B2999C600F39AFF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39DA178E749C00E6809E /* libc++.dylib */; };
 		6CB9A0D91B2999CC00F39AFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D514717865D5100B5864B /* AudioToolbox.framework */; };
 		6CB9A0DA1B2999D500F39AFF /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DD2851891E5390075B66C /* GameController.framework */; };
 		6CB9A15D1B29A37800F39AFF /* emu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098117872CF40060B347 /* emu.cpp */; };
@@ -209,7 +208,6 @@
 		6CB9A2781B2AC39400F39AFF /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB981794ACFE0061D1D8 /* SKBounceAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2911B2AE5B000F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE58F391B29783E00248407 /* NDSResource.bundle */; };
 		6CB9A2951B2AE8B500F39AFF /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9A2941B2AE8B500F39AFF /* NDS.framework */; };
-		6CB9A2971B2AE8BD00F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A2961B2AE8BD00F39AFF /* NDSResource.bundle */; };
 		6CB9A2991B2AE91C00F39AFF /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */; };
 		6CB9A29A1B2AE92900F39AFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9A17674D93000911CF /* libz.dylib */; };
 		6CB9A29B1B2AE94200F39AFF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9017674902000911CF /* GLKit.framework */; };
@@ -448,6 +446,7 @@
 		28E7A6F31787D8D5003A9C5B /* HideEmulator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HideEmulator.png; path = Resources/HideEmulator.png; sourceTree = "<group>"; };
 		28E7A6F41787D8D5003A9C5B /* HideEmulator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HideEmulator@2x.png"; path = "Resources/HideEmulator@2x.png"; sourceTree = "<group>"; };
 		4C3F2AEC178E017600AE10B8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		6C6A1AEC1B2EC8B70055E808 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
 		6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NitrogenMain.h; sourceTree = "<group>"; };
 		6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NitrogenMain.m; sourceTree = "<group>"; };
 		6CB9A0A21B298B6200F39AFF /* NDSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -463,7 +462,6 @@
 		6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */ = {isa = PBXFileReference; lastKnownFileType = file; path = NDS0032.nds; sourceTree = "<group>"; };
 		6CB9A2031B2A928C00F39AFF /* NDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDS.h; sourceTree = "<group>"; };
 		6CB9A2941B2AE8B500F39AFF /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
-		6CB9A2961B2AE8BD00F39AFF /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
 		6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		6CE58F2D1B29752A00248407 /* NDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE58F301B29752B00248407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -808,12 +806,10 @@
 			files = (
 				6CB9A0DA1B2999D500F39AFF /* GameController.framework in Frameworks */,
 				6CB9A0D91B2999CC00F39AFF /* AudioToolbox.framework in Frameworks */,
-				6CB9A0D81B2999C600F39AFF /* libc++.dylib in Frameworks */,
 				6CB9A0D71B2999BC00F39AFF /* QuartzCore.framework in Frameworks */,
 				6CB9A0D61B2999B600F39AFF /* SystemConfiguration.framework in Frameworks */,
 				6CB9A0D51B2999B000F39AFF /* Security.framework in Frameworks */,
 				6CB9A0D41B29999A00F39AFF /* CFNetwork.framework in Frameworks */,
-				6CB9A0D31B29999400F39AFF /* libz.dylib in Frameworks */,
 				6CB9A0D21B29998E00F39AFF /* OpenGLES.framework in Frameworks */,
 				6CB9A0D11B29998700F39AFF /* GLKit.framework in Frameworks */,
 				6CB9A0D01B29998000F39AFF /* UIKit.framework in Frameworks */,
@@ -874,7 +870,7 @@
 		6CB9A0A31B298B6300F39AFF /* NDSTest */ = {
 			isa = PBXGroup;
 			children = (
-				6CB9A2961B2AE8BD00F39AFF /* NDSResource.bundle */,
+				6C6A1AEC1B2EC8B70055E808 /* NDSResource.bundle */,
 				6CB9A2941B2AE8B500F39AFF /* NDS.framework */,
 				6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */,
 				6CB9A0A81B298B6300F39AFF /* AppDelegate.h */,
@@ -1711,9 +1707,9 @@
 			files = (
 				6CB9A0B01B298B6300F39AFF /* Main.storyboard in Resources */,
 				6CB9A0B51B298B6300F39AFF /* LaunchScreen.xib in Resources */,
-				6CB9A2971B2AE8BD00F39AFF /* NDSResource.bundle in Resources */,
 				6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */,
 				6CB9A0B21B298B6300F39AFF /* Images.xcassets in Resources */,
+				6C6A1AED1B2EC8B70055E808 /* NDSResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2525,7 +2521,7 @@
 					"$(SRCROOT)/desmume/src/android",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Nitrogen/support/Nitrogen-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = (
 					"-DANDROID",
 					"-DCOMPRESS_MT",
@@ -2566,7 +2562,7 @@
 					"$(SRCROOT)/desmume/src/android",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Nitrogen/support/Nitrogen-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Nitrogen;
 				PROVISIONING_PROFILE = "";

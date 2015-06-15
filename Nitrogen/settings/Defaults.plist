@@ -9,7 +9,7 @@
 	<key>disableSound</key>
 	<false/>
 	<key>controlOpacity</key>
-	<real>0.5</real>
+	<real>0.001</real>
 	<key>controlPosition</key>
 	<integer>1</integer>
 	<key>controlPadStyle</key>
