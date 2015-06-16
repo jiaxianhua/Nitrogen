@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 
+#import "AppDelegate.h"
+
 #import <NDS/NDS.h>
 #import <NDS/NitrogenMain.h>
+#import <NDS/NitrogenRightMenuViewController.h>
 
 @interface ViewController ()
 
@@ -31,8 +34,16 @@
     NSArray *games = [NitrogenGame gamesAtPath:NitrogenMain.sharedInstance.documentsPath saveStateDirectoryPath:NitrogenMain.sharedInstance.batteryDir];
     if (games.count > 0) {
         NitrogenGame *game = games[0];
-        
-        [[NitrogenMain sharedInstance] startGame:game withSavedState:-1];
+        [self OpenNDSMenu:game];
     }
+}
+
+- (void)OpenNDSMenu:(NitrogenGame *)game {
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
+    
+    NitrogenRightMenuViewController *rightMenu = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"rightMenu"];
+    rightMenu.game = game;
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    app.window.rootViewController = rightMenu;
 }
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "NitrogenRightMenuViewController.h"
-//#import "AppDelegate.h"
 #import "NitrogenMain.h"
 
 @interface NitrogenRightMenuViewController ()
@@ -36,7 +35,9 @@
 {
     [super viewDidDisappear:animated];
     SASlideMenuRootViewController *rootViewController = (SASlideMenuRootViewController*)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [rootViewController removeRightMenu];
+    if ([rootViewController respondsToSelector:@selector(removeRightMenu)]) {
+        [rootViewController removeRightMenu];
+    }
 }
 
 #pragma mark - Table View data source
@@ -54,16 +55,23 @@
     cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NDSResource.bundle/rowselected"]];
     cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NDSResource.bundle/disclosure"]];
     
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
+    
     // text
-    cell.textLabel.text = NSLocalizedString(@"LAUNCH_GAME", nil);
+    cell.textLabel.text = NSLocalizedStringFromTableInBundle(@"LAUNCH_GAME", nil, bundle, nil);
     cell.detailTextLabel.text = NSLocalizedString(@"LAUNCH_GAME_DETAIL", nil);
+    cell.detailTextLabel.text = NSLocalizedStringFromTableInBundle(@"LAUNCH_GAME_DETAIL", nil, bundle, nil);
     
     // detail
     if (indexPath.row > 0) {
-        cell.textLabel.text = (indexPath.row == 1 && self.game.hasPauseState) ? NSLocalizedString(@"RESUME_AUTOSAVE", nil) : [self.game nameOfSaveStateAtIndex:indexPath.row - 1];
-        cell.detailTextLabel.text = [NSDateFormatter localizedStringFromDate:[self.game dateOfSaveStateAtIndex:indexPath.row -1]
-                                                                   dateStyle:NSDateFormatterMediumStyle
-                                                                   timeStyle:NSDateFormatterMediumStyle];
+        cell.textLabel.text = (indexPath.row == 1 && self.game.hasPauseState)
+        ? NSLocalizedStringFromTableInBundle(@"LAUNCH_GAME_DETAIL", nil, bundle, nil)
+        : [self.game nameOfSaveStateAtIndex:indexPath.row - 1];
+        cell.detailTextLabel.text =
+        [NSDateFormatter localizedStringFromDate:
+         [self.game dateOfSaveStateAtIndex:indexPath.row -1]
+                                       dateStyle:NSDateFormatterMediumStyle
+                                       timeStyle:NSDateFormatterMediumStyle];
     }
     
     return cell;

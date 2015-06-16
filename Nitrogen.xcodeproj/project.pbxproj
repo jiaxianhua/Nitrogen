@@ -205,15 +205,14 @@
 		6CB9A2761B2AC39400F39AFF /* OLGhostAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4895BE178CCBEE00BA61C3 /* OLGhostAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2771B2AC39400F39AFF /* ZAActivityBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB941794ACEF0061D1D8 /* ZAActivityBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB9A2781B2AC39400F39AFF /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BB981794ACFE0061D1D8 /* SKBounceAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CB9A2911B2AE5B000F39AFF /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE58F391B29783E00248407 /* NDSResource.bundle */; };
 		6CB9A2991B2AE91C00F39AFF /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */; };
 		6CB9A29A1B2AE92900F39AFF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9A17674D93000911CF /* libz.dylib */; };
 		6CB9A29B1B2AE94200F39AFF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE6F9017674902000911CF /* GLKit.framework */; };
 		6CB9A29D1B2AE96F00F39AFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFE0F61764FBD3000A70CF /* CoreGraphics.framework */; };
 		6CB9A29E1B2AE97F00F39AFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D514717865D5100B5864B /* AudioToolbox.framework */; };
 		6CB9A29F1B2AE99D00F39AFF /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DD2851891E5390075B66C /* GameController.framework */; };
-		6CE27B281B2FBE5B00B645F0 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE27B261B2FBE5B00B645F0 /* NDS.framework */; };
-		6CE27B291B2FBE5B00B645F0 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE27B271B2FBE5B00B645F0 /* NDSResource.bundle */; };
+		6CE27B551B300F1100B645F0 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE27B531B300F1100B645F0 /* NDS.framework */; };
+		6CE27B561B300F1100B645F0 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CE27B541B300F1100B645F0 /* NDSResource.bundle */; };
 		6CE58F401B2978CC00248407 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304E178DD27000E92785 /* 19-gear.png */; };
 		6CE58F411B2978CC00248407 /* 19-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B28304F178DD27000E92785 /* 19-gear@2x.png */; };
 		6CE58F421B2978CC00248407 /* 24-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B283056178DD59700E92785 /* 24-gift.png */; };
@@ -461,8 +460,8 @@
 		6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */ = {isa = PBXFileReference; lastKnownFileType = file; path = NDS0032.nds; sourceTree = "<group>"; };
 		6CB9A2031B2A928C00F39AFF /* NDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDS.h; sourceTree = "<group>"; };
 		6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
-		6CE27B261B2FBE5B00B645F0 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
-		6CE27B271B2FBE5B00B645F0 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
+		6CE27B531B300F1100B645F0 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
+		6CE27B541B300F1100B645F0 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
 		6CE58F2D1B29752A00248407 /* NDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE58F301B29752B00248407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE58F391B29783E00248407 /* NDSResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDSResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -790,7 +789,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE27B281B2FBE5B00B645F0 /* NDS.framework in Frameworks */,
+				6CE27B551B300F1100B645F0 /* NDS.framework in Frameworks */,
 				6CB9A29F1B2AE99D00F39AFF /* GameController.framework in Frameworks */,
 				6CB9A29E1B2AE97F00F39AFF /* AudioToolbox.framework in Frameworks */,
 				6CB9A29D1B2AE96F00F39AFF /* CoreGraphics.framework in Frameworks */,
@@ -870,8 +869,8 @@
 		6CB9A0A31B298B6300F39AFF /* NDSTest */ = {
 			isa = PBXGroup;
 			children = (
-				6CE27B261B2FBE5B00B645F0 /* NDS.framework */,
-				6CE27B271B2FBE5B00B645F0 /* NDSResource.bundle */,
+				6CE27B531B300F1100B645F0 /* NDS.framework */,
+				6CE27B541B300F1100B645F0 /* NDSResource.bundle */,
 				6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */,
 				6CB9A0A81B298B6300F39AFF /* AppDelegate.h */,
 				6CB9A0A91B298B6300F39AFF /* AppDelegate.m */,
@@ -1709,7 +1708,7 @@
 				6CB9A0B51B298B6300F39AFF /* LaunchScreen.xib in Resources */,
 				6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */,
 				6CB9A0B21B298B6300F39AFF /* Images.xcassets in Resources */,
-				6CE27B291B2FBE5B00B645F0 /* NDSResource.bundle in Resources */,
+				6CE27B561B300F1100B645F0 /* NDSResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1777,7 +1776,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CB9A2911B2AE5B000F39AFF /* NDSResource.bundle in Resources */,
 				28DA4A481787FD7F002236A4 /* Select.png in Resources */,
 				28DA4A52178802FB002236A4 /* RTrigger.png in Resources */,
 				28DA4A491787FD7F002236A4 /* Select@2x.png in Resources */,
@@ -2510,6 +2508,7 @@
 					"\"$(SRCROOT)/Nitrogen/frameworks\"",
 					"\"$(SRCROOT)/Nitrogen\"",
 					"\"$(SRCROOT)/Nitrogen/Reveal\"",
+					"$(PROJECT_DIR)/NDSTest",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2551,6 +2550,7 @@
 					"\"$(SRCROOT)/Nitrogen/frameworks\"",
 					"\"$(SRCROOT)/Nitrogen\"",
 					"\"$(SRCROOT)/Nitrogen/Reveal\"",
+					"$(PROJECT_DIR)/NDSTest",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
