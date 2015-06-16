@@ -60,7 +60,24 @@ static NitrogenMain *sharedInstance = nil;
     if ([sasvc respondsToSelector:@selector(doSlideIn:)]) {
         [sasvc doSlideIn:nil];
     }
-    [vc showDetailViewController:emulatorViewController sender:nil];
+    
+    int ios_version = [self get_ios_version_major];
+    
+    if (ios_version >= 8.0) {
+        [vc showDetailViewController:emulatorViewController sender:nil];
+    }
+    else {
+        [vc presentViewController:emulatorViewController animated:YES completion:nil];
+    }
+}
+
+- (int)get_ios_version_major {
+    static int version = -1;
+    
+    if (version < 0)
+        version = (int)[[[UIDevice currentDevice] systemVersion] floatValue];
+    
+    return version;
 }
 
 @end
