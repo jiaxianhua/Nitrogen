@@ -26,6 +26,8 @@
 		6C410A221B314AD800FCE405 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A0B31B298B6300F39AFF /* LaunchScreen.xib */; };
 		6C410A321B3156B700FCE405 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C410A311B3156B700FCE405 /* NDSResource.bundle */; };
 		6C410A341B31598400FCE405 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C410A331B31598400FCE405 /* NDS.framework */; };
+		6C410A3B1B315EF500FCE405 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C410A391B315EF500FCE405 /* NDS.framework */; };
+		6C410A3C1B315EF500FCE405 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C410A3A1B315EF500FCE405 /* NDSResource.bundle */; };
 		6CB9A09D1B29861F00F39AFF /* NitrogenMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; };
 		6CB9A0A71B298B6300F39AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A61B298B6300F39AFF /* main.m */; };
 		6CB9A0AA1B298B6300F39AFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A91B298B6300F39AFF /* AppDelegate.m */; };
@@ -446,6 +448,8 @@
 		4C3F2AEC178E017600AE10B8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		6C410A311B3156B700FCE405 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
 		6C410A331B31598400FCE405 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
+		6C410A391B315EF500FCE405 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
+		6C410A3A1B315EF500FCE405 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
 		6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NitrogenMain.h; sourceTree = "<group>"; };
 		6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NitrogenMain.m; sourceTree = "<group>"; };
 		6CB9A0A21B298B6200F39AFF /* NDSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -794,6 +798,7 @@
 				6CB9A29D1B2AE96F00F39AFF /* CoreGraphics.framework in Frameworks */,
 				6CB9A29B1B2AE94200F39AFF /* GLKit.framework in Frameworks */,
 				6CB9A29A1B2AE92900F39AFF /* libz.dylib in Frameworks */,
+				6C410A3B1B315EF500FCE405 /* NDS.framework in Frameworks */,
 				6CB9A2991B2AE91C00F39AFF /* libstdc++.6.0.9.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1186,6 +1191,8 @@
 		BFCFE0F11764FBD3000A70CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C410A391B315EF500FCE405 /* NDS.framework */,
+				6C410A3A1B315EF500FCE405 /* NDSResource.bundle */,
 				6CB9A2981B2AE91C00F39AFF /* libstdc++.6.0.9.dylib */,
 				9C4DD2851891E5390075B66C /* GameController.framework */,
 				D3B8BB911794ACCE0061D1D8 /* DropboxSDK.framework */,
@@ -1705,6 +1712,7 @@
 				6C410A211B314AD800FCE405 /* Main.storyboard in Resources */,
 				6C410A221B314AD800FCE405 /* LaunchScreen.xib in Resources */,
 				6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */,
+				6C410A3C1B315EF500FCE405 /* NDSResource.bundle in Resources */,
 				6CB9A0B21B298B6300F39AFF /* Images.xcassets in Resources */,
 				6C410A321B3156B700FCE405 /* NDSResource.bundle in Resources */,
 			);
@@ -2177,6 +2185,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NDSTest",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2209,6 +2218,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NDSTest",
+					"$(PROJECT_DIR)",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
