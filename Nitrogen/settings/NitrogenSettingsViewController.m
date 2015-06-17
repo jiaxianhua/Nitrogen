@@ -9,7 +9,9 @@
 #import "NitrogenSettingsViewController.h"
 #import "OLGhostAlertView.h"
 
-@interface NitrogenSettingsViewController ()
+@interface NitrogenSettingsViewController () {
+    NSBundle *bundle;
+}
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *settingsTitle;
 
@@ -68,29 +70,31 @@
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:78.0/255.0 green:156.0/255.0 blue:206.0/255.0 alpha:1.0]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
     
-    self.settingsTitle.title = NSLocalizedString(@"SETTINGS", nil);
+    bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
     
-    self.frameSkipLabel.text = NSLocalizedString(@"FRAME_SKIP", nil);
-    self.disableSoundLabel.text = NSLocalizedString(@"DISABLE_SOUND", nil);
-    self.showPixelGridLabel.text = NSLocalizedString(@"OVERLAY_PIXEL_GRID", nil);
-
-    self.controlPadStyleLabel.text = NSLocalizedString(@"CONTROL_PAD_STYLE", nil);
-    self.controlPositionLabel.text = NSLocalizedString(@"CONTROL_POSITION_PORTRAIT", nil);
-    self.controlOpacityLabel.text = NSLocalizedString(@"CONTROL_OPACITY_PORTRAIT", nil);
+    self.settingsTitle.title = NSLocalizedStringFromTableInBundle(@"SETTINGS", nil, bundle, nil);
     
-    self.dropboxLabel.text = NSLocalizedString(@"ENABLE_DROPBOX", nil);
-    self.accountLabel.text = NSLocalizedString(@"NOT_LINKED", nil);
+    self.frameSkipLabel.text = NSLocalizedStringFromTableInBundle(@"FRAME_SKIP", nil, bundle, nil);
+    self.disableSoundLabel.text = NSLocalizedStringFromTableInBundle(@"DISABLE_SOUND", nil, bundle, nil);
+    self.showPixelGridLabel.text = NSLocalizedStringFromTableInBundle(@"OVERLAY_PIXEL_GRID", nil, bundle, nil);
+
+    self.controlPadStyleLabel.text = NSLocalizedStringFromTableInBundle(@"CONTROL_PAD_STYLE", nil, bundle, nil);
+    self.controlPositionLabel.text = NSLocalizedStringFromTableInBundle(@"CONTROL_POSITION_PORTRAIT", nil, bundle, nil);
+    self.controlOpacityLabel.text = NSLocalizedStringFromTableInBundle(@"CONTROL_OPACITY_PORTRAIT", nil, bundle, nil);
     
-    self.showFPSLabel.text = NSLocalizedString(@"SHOW_FPS", nil);
-    self.vibrateLabel.text = NSLocalizedString(@"VIBRATION", nil);
+    self.dropboxLabel.text = NSLocalizedStringFromTableInBundle(@"ENABLE_DROPBOX", nil, bundle, nil);
+    self.accountLabel.text = NSLocalizedStringFromTableInBundle(@"NOT_LINKED", nil, bundle, nil);
+    
+    self.showFPSLabel.text = NSLocalizedStringFromTableInBundle(@"SHOW_FPS", nil, bundle, nil);
+    self.vibrateLabel.text = NSLocalizedStringFromTableInBundle(@"VIBRATION", nil, bundle, nil);
 
-    [self.frameSkipControl setTitle:NSLocalizedString(@"AUTO", nil) forSegmentAtIndex:5];
+    [self.frameSkipControl setTitle:NSLocalizedStringFromTableInBundle(@"AUTO", nil, bundle, nil) forSegmentAtIndex:5];
 
-    [self.controlPadStyleControl setTitle:NSLocalizedString(@"DPAD", nil) forSegmentAtIndex:0];
-    [self.controlPadStyleControl setTitle:NSLocalizedString(@"JOYSTICK", nil) forSegmentAtIndex:1];
+    [self.controlPadStyleControl setTitle:NSLocalizedStringFromTableInBundle(@"DPAD", nil, bundle, nil) forSegmentAtIndex:0];
+    [self.controlPadStyleControl setTitle:NSLocalizedStringFromTableInBundle(@"JOYSTICK", nil, bundle, nil) forSegmentAtIndex:1];
 
-    [self.controlPositionControl setTitle:NSLocalizedString(@"TOP", nil) forSegmentAtIndex:0];
-    [self.controlPositionControl setTitle:NSLocalizedString(@"BOTTOM", nil) forSegmentAtIndex:1];
+    [self.controlPositionControl setTitle:NSLocalizedStringFromTableInBundle(@"TOP", nil, bundle, nil) forSegmentAtIndex:0];
+    [self.controlPositionControl setTitle:NSLocalizedStringFromTableInBundle(@"BOTTOM", nil, bundle, nil) forSegmentAtIndex:1];
     
     
     UIView *hiddenSettingsTapView = [[UIView alloc] initWithFrame:CGRectMake(245, 0, 75, 44)];
@@ -110,19 +114,16 @@
     switch (section)
     {
         case 0:
-            sectionName = NSLocalizedString(@"EMULATOR", nil);
+            sectionName = NSLocalizedStringFromTableInBundle(@"EMULATOR", nil, bundle, nil);
             break;
         case 1:
-            sectionName = NSLocalizedString(@"CONTROLS", nil);
+            sectionName = NSLocalizedStringFromTableInBundle(@"CONTROLS", nil, bundle, nil);
             break;
         case 2:
-            sectionName = @"Dropbox";
+            sectionName = NSLocalizedStringFromTableInBundle(@"DEVELOPER", nil, bundle, nil);
             break;
         case 3:
-            sectionName = NSLocalizedString(@"DEVELOPER", nil);
-            break;
-        case 4:
-            sectionName = NSLocalizedString(@"EXPERIMENTAL", nil);
+            sectionName = NSLocalizedStringFromTableInBundle(@"EXPERIMENTAL", nil, bundle, nil);
             break;
         default:
             sectionName = @"";
@@ -137,13 +138,10 @@
     switch (section)
     {
         case 0:
-            sectionName = NSLocalizedString(@"OVERLAY_PIXEL_GRID_DETAIL", nil);
+            sectionName = NSLocalizedStringFromTableInBundle(@"OVERLAY_PIXEL_GRID_DETAIL", nil, bundle, nil);
             break;
-        case 2:
-            sectionName = NSLocalizedString(@"ENABLE_DROPBOX_DETAIL", nil);
-            break;
-        case 4:
-            sectionName = NSLocalizedString(@"ARMLJIT_DETAIL", nil);
+        case 3:
+            sectionName = NSLocalizedStringFromTableInBundle(@"ARMLJIT_DETAIL", nil, bundle, nil);
             break;
         default:
             sectionName = @"";
@@ -213,7 +211,7 @@
     self.cellularSwitch.on = [defaults boolForKey:@"enableDropboxCellular"];
     
     if ([defaults boolForKey:@"enableDropbox"] == true) {
-        self.accountLabel.text = NSLocalizedString(@"LINKED", nil);
+        self.accountLabel.text = NSLocalizedStringFromTableInBundle(@"LINKED", nil, bundle, nil);
     }
 }
 
@@ -223,7 +221,7 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults boolForKey:@"enableDropbox"] == true) {
-        self.accountLabel.text = NSLocalizedString(@"LINKED", nil);
+        self.accountLabel.text = NSLocalizedStringFromTableInBundle(@"LINKED", nil, bundle, nil);
     }
 }
 

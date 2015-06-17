@@ -24,8 +24,8 @@
 		28E7A6F61787D8D5003A9C5B /* HideEmulator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E7A6F41787D8D5003A9C5B /* HideEmulator@2x.png */; };
 		6C410A211B314AD800FCE405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A0AE1B298B6300F39AFF /* Main.storyboard */; };
 		6C410A221B314AD800FCE405 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB9A0B31B298B6300F39AFF /* LaunchScreen.xib */; };
-		6C410A2D1B31535300FCE405 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C410A2B1B31535300FCE405 /* NDS.framework */; };
-		6C410A301B31543200FCE405 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C410A2F1B31543200FCE405 /* NDSResource.bundle */; };
+		6C410A321B3156B700FCE405 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C410A311B3156B700FCE405 /* NDSResource.bundle */; };
+		6C410A341B31598400FCE405 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C410A331B31598400FCE405 /* NDS.framework */; };
 		6CB9A09D1B29861F00F39AFF /* NitrogenMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; };
 		6CB9A0A71B298B6300F39AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A61B298B6300F39AFF /* main.m */; };
 		6CB9A0AA1B298B6300F39AFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A91B298B6300F39AFF /* AppDelegate.m */; };
@@ -444,8 +444,8 @@
 		28E7A6F31787D8D5003A9C5B /* HideEmulator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HideEmulator.png; path = Resources/HideEmulator.png; sourceTree = "<group>"; };
 		28E7A6F41787D8D5003A9C5B /* HideEmulator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HideEmulator@2x.png"; path = "Resources/HideEmulator@2x.png"; sourceTree = "<group>"; };
 		4C3F2AEC178E017600AE10B8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		6C410A2B1B31535300FCE405 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
-		6C410A2F1B31543200FCE405 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
+		6C410A311B3156B700FCE405 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
+		6C410A331B31598400FCE405 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
 		6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NitrogenMain.h; sourceTree = "<group>"; };
 		6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NitrogenMain.m; sourceTree = "<group>"; };
 		6CB9A0A21B298B6200F39AFF /* NDSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -788,7 +788,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C410A2D1B31535300FCE405 /* NDS.framework in Frameworks */,
+				6C410A341B31598400FCE405 /* NDS.framework in Frameworks */,
 				6CB9A29F1B2AE99D00F39AFF /* GameController.framework in Frameworks */,
 				6CB9A29E1B2AE97F00F39AFF /* AudioToolbox.framework in Frameworks */,
 				6CB9A29D1B2AE96F00F39AFF /* CoreGraphics.framework in Frameworks */,
@@ -868,8 +868,8 @@
 		6CB9A0A31B298B6300F39AFF /* NDSTest */ = {
 			isa = PBXGroup;
 			children = (
-				6C410A2F1B31543200FCE405 /* NDSResource.bundle */,
-				6C410A2B1B31535300FCE405 /* NDS.framework */,
+				6C410A331B31598400FCE405 /* NDS.framework */,
+				6C410A311B3156B700FCE405 /* NDSResource.bundle */,
 				6CB9A1BE1B29A8CD00F39AFF /* NDS0032.nds */,
 				6CB9A0A81B298B6300F39AFF /* AppDelegate.h */,
 				6CB9A0A91B298B6300F39AFF /* AppDelegate.m */,
@@ -1706,7 +1706,7 @@
 				6C410A221B314AD800FCE405 /* LaunchScreen.xib in Resources */,
 				6CB9A1BF1B29A8CD00F39AFF /* NDS0032.nds in Resources */,
 				6CB9A0B21B298B6300F39AFF /* Images.xcassets in Resources */,
-				6C410A301B31543200FCE405 /* NDSResource.bundle in Resources */,
+				6C410A321B3156B700FCE405 /* NDSResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

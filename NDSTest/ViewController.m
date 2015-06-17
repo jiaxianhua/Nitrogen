@@ -13,6 +13,7 @@
 #import <NDS/NDS.h>
 #import <NDS/NitrogenMain.h>
 #import <NDS/NitrogenRightMenuViewController.h>
+#import <NDS/NitrogenSettingsViewController.h>
 
 @interface ViewController ()
 
@@ -44,5 +45,13 @@
     NitrogenRightMenuViewController *rightMenu = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"rightMenu"];
     rightMenu.game = game;
     [self.navigationController pushViewController:rightMenu animated:YES];
+    rightMenu.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(settingGame)];
+}
+
+- (void)settingGame {
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"NDSResource" withExtension:@"bundle"]];
+    
+    NitrogenSettingsViewController *nsvc = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"NitrogenSettingsViewController"];
+    [self.navigationController pushViewController:nsvc animated:YES];
 }
 @end
