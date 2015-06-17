@@ -47,7 +47,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="47N-RE-WE1"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -83,7 +83,7 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Disable Sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJw-qx-K1N">
                                                     <rect key="frame" x="8" y="8" width="535" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -122,7 +122,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="Xas-Ri-hhe"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -166,7 +166,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="qFK-vl-Lzi"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -207,7 +207,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="O6g-r6-Cyk"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -235,7 +235,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="NFe-2V-9Sa"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.10000000000000001" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="V8F-J8-cfe">
@@ -283,7 +283,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="zN2-jq-xf8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -325,7 +325,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="RAC-pU-hEk"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -367,7 +367,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="tSH-rU-X7l"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -431,14 +431,14 @@
                                             <rect key="frame" x="15" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MdE-38-mM4">
                                             <rect key="frame" x="15" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -512,26 +512,6 @@
                                             <action selector="pressedABXY:" destination="WRM-pR-XCP" eventType="valueChanged" id="5Rn-3B-kxl"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAf-Ip-ZfX">
-                                        <rect key="frame" x="276" y="574" width="48" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="ezX-BR-W0x"/>
-                                            <constraint firstAttribute="height" constant="26" id="kU7-x0-U5i"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="Start.png">
-                                            <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onButtonDown:" destination="WRM-pR-XCP" eventType="touchDown" id="8jl-EE-KAf"/>
-                                            <action selector="onButtonUp:" destination="WRM-pR-XCP" eventType="touchUpInside" id="bhR-nm-NTG"/>
-                                            <action selector="onButtonUp:" destination="WRM-pR-XCP" eventType="touchUpOutside" id="zhg-6O-SkF"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPM-bk-qVx">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="44"/>
                                         <constraints>
@@ -592,22 +572,74 @@
                                             <action selector="onButtonUp:" destination="WRM-pR-XCP" eventType="touchUpOutside" id="FJ2-Vv-RIY"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAf-Ip-ZfX">
+                                        <rect key="frame" x="276" y="574" width="48" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="ezX-BR-W0x"/>
+                                            <constraint firstAttribute="height" constant="26" id="kU7-x0-U5i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="Start.png">
+                                            <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButtonDown:" destination="WRM-pR-XCP" eventType="touchDown" id="8jl-EE-KAf"/>
+                                            <action selector="onButtonUp:" destination="WRM-pR-XCP" eventType="touchUpInside" id="bhR-nm-NTG"/>
+                                            <action selector="onButtonUp:" destination="WRM-pR-XCP" eventType="touchUpOutside" id="zhg-6O-SkF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="wc7-x7-O1M" secondAttribute="bottom" id="1hX-Nu-Qg1"/>
                                     <constraint firstItem="YM6-fX-N4s" firstAttribute="top" secondItem="S6c-5v-781" secondAttribute="top" id="3Yg-Xx-TyA"/>
                                     <constraint firstAttribute="bottom" secondItem="2r2-6d-4At" secondAttribute="bottom" id="4lM-oI-VbB"/>
+                                    <constraint firstItem="V4S-vg-8Nm" firstAttribute="leading" secondItem="S6c-5v-781" secondAttribute="leading" constant="36" id="5mU-hc-g4p">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
                                     <constraint firstItem="BPM-bk-qVx" firstAttribute="top" secondItem="S6c-5v-781" secondAttribute="top" id="C4d-4r-4mH"/>
+                                    <constraint firstItem="DAf-Ip-ZfX" firstAttribute="top" secondItem="YM6-fX-N4s" secondAttribute="bottom" constant="75" id="CTb-Qa-Xdi">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                    </constraint>
                                     <constraint firstAttribute="centerX" secondItem="DAf-Ip-ZfX" secondAttribute="centerX" id="JoV-nT-ZYE"/>
                                     <constraint firstAttribute="trailing" secondItem="YM6-fX-N4s" secondAttribute="trailing" id="OCB-Y9-nHf"/>
                                     <constraint firstAttribute="trailing" secondItem="wc7-x7-O1M" secondAttribute="trailing" id="TAi-fG-uFu"/>
                                     <constraint firstItem="DAf-Ip-ZfX" firstAttribute="top" secondItem="V4S-vg-8Nm" secondAttribute="bottom" constant="8" id="USS-8Z-b6K"/>
+                                    <constraint firstAttribute="trailing" secondItem="DAf-Ip-ZfX" secondAttribute="trailing" constant="19" id="gd4-4M-VSa">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
                                     <constraint firstAttribute="bottom" secondItem="DAf-Ip-ZfX" secondAttribute="bottom" id="kE7-Jf-fUf"/>
+                                    <constraint firstItem="V4S-vg-8Nm" firstAttribute="top" secondItem="BPM-bk-qVx" secondAttribute="bottom" constant="63" id="mrc-Nq-LO1">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                    </constraint>
                                     <constraint firstItem="BPM-bk-qVx" firstAttribute="leading" secondItem="S6c-5v-781" secondAttribute="leading" id="rIz-CP-R6O"/>
                                     <constraint firstAttribute="centerX" secondItem="V4S-vg-8Nm" secondAttribute="centerX" id="s4B-R4-L4O"/>
                                     <constraint firstItem="2r2-6d-4At" firstAttribute="leading" secondItem="S6c-5v-781" secondAttribute="leading" id="zwb-6b-dop"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5mU-hc-g4p"/>
+                                        <exclude reference="mrc-Nq-LO1"/>
+                                        <exclude reference="CTb-Qa-Xdi"/>
+                                        <exclude reference="gd4-4M-VSa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="5mU-hc-g4p"/>
+                                        <include reference="mrc-Nq-LO1"/>
+                                        <exclude reference="s4B-R4-L4O"/>
+                                        <include reference="CTb-Qa-Xdi"/>
+                                        <exclude reference="JoV-nT-ZYE"/>
+                                        <exclude reference="USS-8Z-b6K"/>
+                                        <include reference="gd4-4M-VSa"/>
+                                        <exclude reference="kE7-Jf-fUf"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZZ-1B-BHQ">
                                 <rect key="frame" x="286" y="0.0" width="28" height="28"/>
@@ -630,7 +662,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="S6c-5v-781" secondAttribute="centerY" id="B5K-iP-47t"/>

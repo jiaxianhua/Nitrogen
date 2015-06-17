@@ -43,7 +43,6 @@
     
     NitrogenRightMenuViewController *rightMenu = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:bundle] instantiateViewControllerWithIdentifier:@"rightMenu"];
     rightMenu.game = game;
-    AppDelegate *app = [UIApplication sharedApplication].delegate;
-    app.window.rootViewController = rightMenu;
+    [self.navigationController pushViewController:rightMenu animated:YES];
 }
 @end
