@@ -22,6 +22,8 @@
 #import "NitrogenMFIControllerSupport.h"
 #import "NitrogenMain.h"
 
+#import "iCadeReaderView.h"
+
 #define STRINGIZE(x) #x
 #define STRINGIZE2(x) STRINGIZE(x)
 #define SHADER_STRING(text) @ STRINGIZE2(text)
@@ -68,7 +70,7 @@ const float textureVert[] =
     1.0f, 1.0f
 };
 
-@interface NitrogenEmulatorViewController () <GLKViewDelegate> {
+@interface NitrogenEmulatorViewController () <GLKViewDelegate, iCadeEventDelegate> {
     int fps;
     
     GLuint texHandle[2];
@@ -98,6 +100,7 @@ const float textureVert[] =
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *selectButton;
 @property (strong, nonatomic) UIImageView *snapshotView;
+@property (nonatomic, weak) IBOutlet UIImageView *stick;
 
 - (IBAction)hideEmulator:(id)sender;
 - (IBAction)onButtonUp:(UIControl*)sender;
@@ -139,6 +142,115 @@ const float textureVert[] =
     }
     
     [self defaultsChanged:nil];
+    
+    // ICade
+    iCadeReaderView *control = [[iCadeReaderView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:control];
+    control.active = YES;
+    control.delegate = self;
+}
+
+
+- (void)setState:(BOOL)state forButton:(iCadeState)button {
+    CGPoint center =  self.stick.center;
+    const CGFloat offset = 50.0f;
+    NitrogenDirectionalControlDirection iCadedirection;
+    
+    switch (button) {
+        case iCadeButtonA:
+//            self.startButton.selected = state;
+            break;
+        case iCadeButtonB:
+//            buttonB.selected = state;
+            break;
+        case iCadeButtonC:
+//            buttonC.selected = state;
+            break;
+        case iCadeButtonD:
+//            buttonD.selected = state;
+            break;
+        case iCadeButtonE:
+//            buttonE.selected = state;
+            break;
+        case iCadeButtonF:
+//            buttonF.selected = state;
+            break;
+        case iCadeButtonG:
+//            buttonG.selected = state;
+            break;
+        case iCadeButtonH:
+//            buttonH.selected = state;
+            break;
+            
+        case iCadeJoystickUp:
+            if (state) {
+                center.y -= offset;
+                iCadedirection = NitrogenDirectionalControlDirectionUp;
+            } else {
+                center.y += offset;
+//                iCadedirection = NitrogenDirectionalControlDirectionDown;
+            }
+            [self pressediCadePad:iCadedirection];
+            break;
+        case iCadeJoystickRight:
+            if (state) {
+                center.x += offset;
+                iCadedirection = NitrogenDirectionalControlDirectionRight;
+            } else {
+                center.x -= offset;
+//                iCadedirection = NitrogenDirectionalControlDirectionLeft;
+            }
+            
+            [self pressediCadePad:iCadedirection];
+            
+            break;
+        case iCadeJoystickDown:
+            if (state) {
+                center.y += offset;
+                iCadedirection = NitrogenDirectionalControlDirectionDown;
+            } else {
+                center.y -= offset;
+//                iCadedirection = NitrogenDirectionalControlDirectionUp;
+            }
+            [self pressediCadePad:iCadedirection];
+            break;
+        case iCadeJoystickLeft:
+            if (state) {
+                center.x -= offset;
+                iCadedirection = NitrogenDirectionalControlDirectionLeft;
+            } else {
+                center.x += offset;
+//                iCadedirection = NitrogenDirectionalControlDirectionRight;
+            }
+            [self pressediCadePad:iCadedirection];
+            break;
+            
+        default:
+            break;
+    }
+    self.stick.center = center;
+}
+
+- (void)pressediCadePad:(NitrogenDirectionalControlDirection)state {
+    if (state != _previousDirection && state != 0)
+    {
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"vibrate"])
+        {
+            [self vibrate];
+        }
+    }
+    
+    EMU_setDPad(state & NitrogenDirectionalControlDirectionUp, state & NitrogenDirectionalControlDirectionDown, state & NitrogenDirectionalControlDirectionLeft, state & NitrogenDirectionalControlDirectionRight);
+    
+    _previousDirection = state;
+}
+
+- (void)buttonDown:(iCadeState)button {
+    [self setState:YES forButton:button];
+}
+
+- (void)buttonUp:(iCadeState)button {
+    [self setState:NO forButton:button];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

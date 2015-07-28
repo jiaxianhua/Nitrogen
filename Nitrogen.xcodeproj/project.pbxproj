@@ -28,6 +28,10 @@
 		6C410A341B31598400FCE405 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C410A331B31598400FCE405 /* NDS.framework */; };
 		6C410A3B1B315EF500FCE405 /* NDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C410A391B315EF500FCE405 /* NDS.framework */; };
 		6C410A3C1B315EF500FCE405 /* NDSResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C410A3A1B315EF500FCE405 /* NDSResource.bundle */; };
+		6CA28CB81B6794F200B4A7E2 /* iCadeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA28CB51B6794F200B4A7E2 /* iCadeReaderView.h */; };
+		6CA28CB91B6794F200B4A7E2 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28CB61B6794F200B4A7E2 /* iCadeReaderView.m */; };
+		6CA28CBA1B6794F200B4A7E2 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA28CB61B6794F200B4A7E2 /* iCadeReaderView.m */; };
+		6CA28CBB1B6794F200B4A7E2 /* iCadeState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA28CB71B6794F200B4A7E2 /* iCadeState.h */; };
 		6CB9A09D1B29861F00F39AFF /* NitrogenMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */; };
 		6CB9A0A71B298B6300F39AFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A61B298B6300F39AFF /* main.m */; };
 		6CB9A0AA1B298B6300F39AFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A0A91B298B6300F39AFF /* AppDelegate.m */; };
@@ -450,6 +454,9 @@
 		6C410A331B31598400FCE405 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
 		6C410A391B315EF500FCE405 /* NDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NDS.framework; sourceTree = "<group>"; };
 		6C410A3A1B315EF500FCE405 /* NDSResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NDSResource.bundle; sourceTree = "<group>"; };
+		6CA28CB51B6794F200B4A7E2 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
+		6CA28CB61B6794F200B4A7E2 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
+		6CA28CB71B6794F200B4A7E2 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
 		6CB9A09B1B29861F00F39AFF /* NitrogenMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NitrogenMain.h; sourceTree = "<group>"; };
 		6CB9A09C1B29861F00F39AFF /* NitrogenMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NitrogenMain.m; sourceTree = "<group>"; };
 		6CB9A0A21B298B6200F39AFF /* NDSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -861,6 +868,16 @@
 			name = "math-neon";
 			sourceTree = "<group>";
 		};
+		6CA28CB41B6794F200B4A7E2 /* iCade */ = {
+			isa = PBXGroup;
+			children = (
+				6CA28CB51B6794F200B4A7E2 /* iCadeReaderView.h */,
+				6CA28CB61B6794F200B4A7E2 /* iCadeReaderView.m */,
+				6CA28CB71B6794F200B4A7E2 /* iCadeState.h */,
+			);
+			path = iCade;
+			sourceTree = "<group>";
+		};
 		6CB9A09A1B2985B900F39AFF /* NDSMain */ = {
 			isa = PBXGroup;
 			children = (
@@ -1154,6 +1171,7 @@
 		BFAE6FAB17675623000911CF /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				6CA28CB41B6794F200B4A7E2 /* iCade */,
 				C345B67018906BB40065A795 /* NitrogenMFIControllerSupport.h */,
 				C345B67118906BB40065A795 /* NitrogenMFIControllerSupport.mm */,
 				8BEA096617872C190060B347 /* NitrogenButtonControl.h */,
@@ -1549,6 +1567,7 @@
 				6CB9A1F91B2A8EE700F39AFF /* SASlideMenuContentSegue.h in Headers */,
 				6CB9A1FA1B2A8EE700F39AFF /* SASlideMenuDataSource.h in Headers */,
 				6CB9A1FB1B2A8EE700F39AFF /* SASlideMenuDelegate.h in Headers */,
+				6CA28CBB1B6794F200B4A7E2 /* iCadeState.h in Headers */,
 				6CB9A1FC1B2A8EE700F39AFF /* SASlideMenuLeftMenuSegue.h in Headers */,
 				6CB9A22E1B2A96CB00F39AFF /* NitrogenEmulatorViewController.h in Headers */,
 				6CB9A1FD1B2A8EE700F39AFF /* SASlideMenuNavigationController.h in Headers */,
@@ -1556,6 +1575,7 @@
 				6CB9A1FF1B2A8EE700F39AFF /* SASlideMenuRightMenuSegue.h in Headers */,
 				6CB9A2001B2A8EE700F39AFF /* SASlideMenuRightMenuViewController.h in Headers */,
 				6CB9A2671B2AC39300F39AFF /* NitrogenROMTableViewController.h in Headers */,
+				6CA28CB81B6794F200B4A7E2 /* iCadeReaderView.h in Headers */,
 				6CB9A2681B2AC39300F39AFF /* NitrogenSettingsViewController.h in Headers */,
 				6CB9A2691B2AC39400F39AFF /* NitrogenMFIControllerSupport.h in Headers */,
 				6CB9A26A1B2AC39400F39AFF /* NitrogenButtonControl.h in Headers */,
@@ -1940,6 +1960,7 @@
 				6CB9A1781B29A37800F39AFF /* movie.cpp in Sources */,
 				6CB9A1791B29A37800F39AFF /* NDSSystem.cpp in Sources */,
 				6CB9A17A1B29A37800F39AFF /* path.cpp in Sources */,
+				6CA28CBA1B6794F200B4A7E2 /* iCadeReaderView.m in Sources */,
 				6CB9A17B1B29A37800F39AFF /* rasterize.cpp in Sources */,
 				6CB9A17C1B29A37800F39AFF /* readwrite.cpp in Sources */,
 				6CB9A17D1B29A37800F39AFF /* render3D.cpp in Sources */,
@@ -2115,6 +2136,7 @@
 				8B305F78178B48FD00FD010A /* SASlideMenuContentSegue.m in Sources */,
 				8B305F79178B48FD00FD010A /* SASlideMenuLeftMenuSegue.m in Sources */,
 				8B305F7A178B48FD00FD010A /* SASlideMenuNavigationController.m in Sources */,
+				6CA28CB91B6794F200B4A7E2 /* iCadeReaderView.m in Sources */,
 				8B305F7B178B48FD00FD010A /* SASlideMenuPushSegue.m in Sources */,
 				8B305F7C178B48FD00FD010A /* SASlideMenuRightMenuSegue.m in Sources */,
 				8B305F7E178B48FD00FD010A /* SASlideMenuRootViewController.m in Sources */,

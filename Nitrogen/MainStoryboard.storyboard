@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RwU-Ga-Til">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RwU-Ga-Til">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -592,6 +592,9 @@
                                             <action selector="onButtonUp:" destination="WRM-pR-XCP" eventType="touchUpOutside" id="zhg-6O-SkF"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JoystickButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="g8c-5k-hiG">
+                                        <rect key="frame" x="272" y="272" width="56" height="56"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -613,9 +616,11 @@
                                         <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                                     </constraint>
                                     <constraint firstAttribute="bottom" secondItem="DAf-Ip-ZfX" secondAttribute="bottom" id="kE7-Jf-fUf"/>
+                                    <constraint firstAttribute="centerX" secondItem="g8c-5k-hiG" secondAttribute="centerX" id="ldu-X4-AeP"/>
                                     <constraint firstItem="V4S-vg-8Nm" firstAttribute="top" secondItem="BPM-bk-qVx" secondAttribute="bottom" constant="63" id="mrc-Nq-LO1">
                                         <variation key="heightClass=compact-widthClass=regular" constant="100"/>
                                     </constraint>
+                                    <constraint firstAttribute="centerY" secondItem="g8c-5k-hiG" secondAttribute="centerY" id="quK-R8-hxO"/>
                                     <constraint firstItem="BPM-bk-qVx" firstAttribute="leading" secondItem="S6c-5v-781" secondAttribute="leading" id="rIz-CP-R6O"/>
                                     <constraint firstAttribute="centerX" secondItem="V4S-vg-8Nm" secondAttribute="centerX" id="s4B-R4-L4O"/>
                                     <constraint firstItem="2r2-6d-4At" firstAttribute="leading" secondItem="S6c-5v-781" secondAttribute="leading" id="zwb-6b-dop"/>
@@ -695,6 +700,7 @@
                         <outlet property="pixelGrid" destination="DP7-yE-vFs" id="sx0-c5-FQe"/>
                         <outlet property="selectButton" destination="V4S-vg-8Nm" id="tBb-zg-QsY"/>
                         <outlet property="startButton" destination="DAf-Ip-ZfX" id="p1g-5Z-VZV"/>
+                        <outlet property="stick" destination="g8c-5k-hiG" id="FwW-3D-GJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioY-OH-Jev" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -941,6 +947,7 @@
         <image name="19-gear.png" width="26" height="26"/>
         <image name="240-cartridge.png" width="32" height="32"/>
         <image name="HideEmulator.png" width="28" height="28"/>
+        <image name="JoystickButton.png" width="56" height="56"/>
         <image name="LTrigger.png" width="67" height="44"/>
         <image name="RTrigger.png" width="67" height="44"/>
         <image name="Select.png" width="48" height="26"/>
