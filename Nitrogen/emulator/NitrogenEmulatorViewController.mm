@@ -100,7 +100,6 @@ const float textureVert[] =
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *selectButton;
 @property (strong, nonatomic) UIImageView *snapshotView;
-@property (nonatomic, weak) IBOutlet UIImageView *stick;
 
 - (IBAction)hideEmulator:(id)sender;
 - (IBAction)onButtonUp:(UIControl*)sender;
@@ -150,109 +149,7 @@ const float textureVert[] =
     control.delegate = self;
 }
 
-
-- (void)setState:(BOOL)state forButton:(iCadeState)button {
-    CGPoint center =  self.stick.center;
-    const CGFloat offset = 50.0f;
-    NitrogenDirectionalControlDirection iCadedirection;
-    
-    switch (button) {
-        case iCadeButtonA:
-//            self.startButton.selected = state;
-            break;
-        case iCadeButtonB:
-//            buttonB.selected = state;
-            break;
-        case iCadeButtonC:
-//            buttonC.selected = state;
-            break;
-        case iCadeButtonD:
-//            buttonD.selected = state;
-            break;
-        case iCadeButtonE:
-//            buttonE.selected = state;
-            break;
-        case iCadeButtonF:
-//            buttonF.selected = state;
-            break;
-        case iCadeButtonG:
-//            buttonG.selected = state;
-            break;
-        case iCadeButtonH:
-//            buttonH.selected = state;
-            break;
-            
-        case iCadeJoystickUp:
-            if (state) {
-                center.y -= offset;
-                iCadedirection = NitrogenDirectionalControlDirectionUp;
-            } else {
-                center.y += offset;
-//                iCadedirection = NitrogenDirectionalControlDirectionDown;
-            }
-            [self pressediCadePad:iCadedirection];
-            break;
-        case iCadeJoystickRight:
-            if (state) {
-                center.x += offset;
-                iCadedirection = NitrogenDirectionalControlDirectionRight;
-            } else {
-                center.x -= offset;
-//                iCadedirection = NitrogenDirectionalControlDirectionLeft;
-            }
-            
-            [self pressediCadePad:iCadedirection];
-            
-            break;
-        case iCadeJoystickDown:
-            if (state) {
-                center.y += offset;
-                iCadedirection = NitrogenDirectionalControlDirectionDown;
-            } else {
-                center.y -= offset;
-//                iCadedirection = NitrogenDirectionalControlDirectionUp;
-            }
-            [self pressediCadePad:iCadedirection];
-            break;
-        case iCadeJoystickLeft:
-            if (state) {
-                center.x -= offset;
-                iCadedirection = NitrogenDirectionalControlDirectionLeft;
-            } else {
-                center.x += offset;
-//                iCadedirection = NitrogenDirectionalControlDirectionRight;
-            }
-            [self pressediCadePad:iCadedirection];
-            break;
-            
-        default:
-            break;
-    }
-    self.stick.center = center;
-}
-
-- (void)pressediCadePad:(NitrogenDirectionalControlDirection)state {
-    if (state != _previousDirection && state != 0)
-    {
-        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"vibrate"])
-        {
-            [self vibrate];
-        }
-    }
-    
-    EMU_setDPad(state & NitrogenDirectionalControlDirectionUp, state & NitrogenDirectionalControlDirectionDown, state & NitrogenDirectionalControlDirectionLeft, state & NitrogenDirectionalControlDirectionRight);
-    
-    _previousDirection = state;
-}
-
-- (void)buttonDown:(iCadeState)button {
-    [self setState:YES forButton:button];
-}
-
-- (void)buttonUp:(iCadeState)button {
-    [self setState:NO forButton:button];
-}
-
+#pragma mark -
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [UIApplication sharedApplication].statusBarHidden = YES;
@@ -736,5 +633,131 @@ FOUNDATION_EXTERN void AudioServicesPlaySystemSoundWithVibration(unsigned long, 
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+}
+
+#pragma mark - iCade Mode
+- (void)setState:(BOOL)state forButton:(iCadeState)button {
+    if (state) {
+        switch (button) {
+            case iCadeButtonA:
+                [self oniCadeButtonDown:BUTTON_SELECT];
+                break;
+            case iCadeButtonB:
+                [self oniCadeButtonDown:BUTTON_L];
+                break;
+            case iCadeButtonC:
+                [self oniCadeButtonDown:BUTTON_START];
+                break;
+            case iCadeButtonD:
+                [self oniCadeButtonDown:BUTTON_R];
+                break;
+            case iCadeButtonE:
+                [self pressediCadeABXY:NitrogenButtonControlButtonY];
+                break;
+            case iCadeButtonF:
+                [self pressediCadeABXY:NitrogenButtonControlButtonX];
+                break;
+            case iCadeButtonG:
+                [self pressediCadeABXY:NitrogenButtonControlButtonB];
+                break;
+            case iCadeButtonH:
+                [self pressediCadeABXY:NitrogenButtonControlButtonA];
+                break;
+                
+            case iCadeJoystickUp:
+                [self pressediCadePad:NitrogenDirectionalControlDirectionUp];
+                break;
+            case iCadeJoystickRight:
+                [self pressediCadePad:NitrogenDirectionalControlDirectionRight];
+                break;
+            case iCadeJoystickDown:
+                [self pressediCadePad:NitrogenDirectionalControlDirectionDown];
+                break;
+            case iCadeJoystickLeft:
+                [self pressediCadePad:NitrogenDirectionalControlDirectionLeft];
+                break;
+            default:
+                break;
+        }
+    }
+    else {
+        switch (button) {
+            case iCadeButtonE:
+                [self pressediCadeABXY:0];
+                break;
+            case iCadeButtonF:
+                [self pressediCadeABXY:0];
+                break;
+            case iCadeButtonG:
+                [self pressediCadeABXY:0];
+                break;
+            case iCadeButtonH:
+                [self pressediCadeABXY:0];
+                break;
+                
+            case iCadeJoystickUp:
+                [self pressediCadePad:0];
+                break;
+            case iCadeJoystickRight:
+                [self pressediCadePad:0];
+                break;
+            case iCadeJoystickDown:
+                [self pressediCadePad:0];
+                break;
+            case iCadeJoystickLeft:
+                [self pressediCadePad:0];
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+- (void)pressediCadePad:(NitrogenDirectionalControlDirection)state {
+    if (state != _previousDirection && state != 0)
+    {
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"vibrate"])
+        {
+            [self vibrate];
+        }
+    }
+    
+    EMU_setDPad(state & NitrogenDirectionalControlDirectionUp, state & NitrogenDirectionalControlDirectionDown, state & NitrogenDirectionalControlDirectionLeft, state & NitrogenDirectionalControlDirectionRight);
+    
+    _previousDirection = state;
+}
+
+- (void)pressediCadeABXY:(NitrogenButtonControlButton)state {
+    if (state != _previousButtons && state != 0)
+    {
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"vibrate"])
+        {
+            [self vibrate];
+        }
+    }
+    
+    EMU_setABXY(state & NitrogenButtonControlButtonA, state & NitrogenButtonControlButtonB, state & NitrogenButtonControlButtonX, state & NitrogenButtonControlButtonY);
+    
+    _previousButtons = state;
+}
+
+- (void)oniCadeButtonUp:(BUTTON_ID)buttonId {
+    EMU_buttonUp(buttonId);
+}
+
+- (void)oniCadeButtonDown:(BUTTON_ID)buttonId {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"vibrate"]) {
+        [self vibrate];
+    }
+    EMU_buttonDown(buttonId);
+}
+
+#pragma mark - iCadeDelegate
+- (void)buttonDown:(iCadeState)button {
+    [self setState:YES forButton:button];
+}
+
+- (void)buttonUp:(iCadeState)button {
+    [self setState:NO forButton:button];
 }
 @end
